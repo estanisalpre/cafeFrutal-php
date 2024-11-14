@@ -42,7 +42,7 @@
     <!--NAV-->
     <nav>
         <ul class="ul_nav">
-            <li><a href="/index.html"><img src="/public/assets/img/logo/logo_horizontal.png" alt="Logo Café Frutal Horizontal"></a></li>
+            <li><a href="/index.html"><img src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal Horizontal"></a></li>
             <li><a href="#nosotros">NOSOTROS</a></li>
             <li><a href="#productos">PRODUCTOS</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
@@ -60,9 +60,9 @@
         <section class="contenedor_principal">
             <figure class="contenedor_carrousel">
                 <ul>
-                    <li class="carrousel_01"><img class="img_01" src="/public/assets/img/cafe_frutal/local_nocturno.jpeg" alt="Local de Café Frutal Nocturno"></li>
-                    <li class="carrousel_02"><img class="img_02" src="/public/assets/img/cafe_frutal/taza_08.jpg" alt="Taza de Café exhibida y servida"></li>
-                    <li class="carrousel_03"><img class="img_03" src="/public/assets/img/cafe_frutal/local_interior.jpeg" alt="Imagen del interior del local Café Frutal"></li>
+                    <li class="carrousel_01"><img class="img_01" src="/public/imgs/cafe_frutal/local_nocturno.jpeg" alt="Local de Café Frutal Nocturno"></li>
+                    <li class="carrousel_02"><img class="img_02" src="/public/imgs/cafe_frutal/taza_08.jpg" alt="Taza de Café exhibida y servida"></li>
+                    <li class="carrousel_03"><img class="img_03" src="/public/imgs/cafe_frutal/local_interior.jpeg" alt="Imagen del interior del local Café Frutal"></li>
                 </ul>
             </figure>
             <article class="contenedor_titulos">
