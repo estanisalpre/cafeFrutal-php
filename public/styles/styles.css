@@ -264,7 +264,7 @@ main{
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
-    background-image: url(../public/imgs/backgrounds/background_01.png);
+    background-image: url(./public/imgs/backgrounds/background_01.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
