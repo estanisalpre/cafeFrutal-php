@@ -264,9 +264,6 @@ main{
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
-    background-image: url(./public/imgs/backgrounds/background_01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 /*Contenedor Carrousel*/
 .contenedor_carrousel{
@@ -827,9 +824,6 @@ main{
     height: 880px;
     display: flex;
     justify-content: center;
-    background-image: url(./public/imgs/logo/logo_con_fondo.jpg);
-    background-size: cover;
-    background-position: center;
     align-items: center;
 }
 .cont_imagen_nosotros img{
