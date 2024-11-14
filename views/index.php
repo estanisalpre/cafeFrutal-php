@@ -293,6 +293,6 @@
         </article>
     </footer>
     <!--VINCULACIÓN JS-->
-    <script type="module" src="../public/js/main.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
 </body>
 </html>
