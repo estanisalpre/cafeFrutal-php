@@ -1,8 +1,8 @@
 <?php
-$host = '82.197.82.73';  // Esto lo debes cambiar con el host de la base de datos proporcionado por Hostinger
-$dbname = 'u584871321_stockProducts'; // Cambia esto con el nombre de tu base de datos
-$username = 'u584871321_admin';  // Cambia esto con tu usuario de base de datos
-$password = 'Kinesis1233#';  // Cambia esto con tu contraseña de base de datos
+$host = '82.197.82.73'; 
+$dbname = 'u584871321_stockProducts'; 
+$username = 'u584871321_admin';  
+$password = 'Kinesis1233';  
 
 try {
     // Crea una nueva conexión PDO
