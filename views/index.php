@@ -20,23 +20,23 @@
             <div class="titulo_hamburguesa">
                 <ul>
                     <li>Menu</li>
-                    <li><img id="cerrar_menu" src="/public/assets/img/icons/cerrar_icono.png" alt="Ícono Cerrar Menú Hamburguesa"></li>
+                    <li><img id="cerrar_menu" src="/public/imgs/icons/cerrar_icono.png" alt="Ícono Cerrar Menú Hamburguesa"></li>
                 </ul>
             </div>
             <div class="links_hamburguesa">
                 <ul>
-                    <li><img class="li_01" src="/public/assets/img/icons/taza_cafe.png" alt=""><a href="#nosotros">NOSOTROS</a></li>
-                    <li><img class="li_02" src="/public/assets/img/icons/cafe_granos_2.png" alt=""><a href="#productos">PRODUCTOS</a></li>
-                    <li><img class="li_03" src="/public/assets/img/icons/planta_cafe.png" alt=""><a href="#contacto">CONTACTO</a></li>
+                    <li><img class="li_01" src="/public/imgs/icons/taza_cafe.png" alt=""><a href="#nosotros">NOSOTROS</a></li>
+                    <li><img class="li_02" src="/public/imgs/icons/cafe_granos_2.png" alt=""><a href="#productos">PRODUCTOS</a></li>
+                    <li><img class="li_03" src="/public/imgs/icons/planta_cafe.png" alt=""><a href="#contacto">CONTACTO</a></li>
                     <button><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafefrutalHamburguesa">Nuestra carta</a></button>
                     <button id="adminButtonBurguer" class="adminButtonHamburguesa">🔒Administración</button>
                     <button id="logOutButton" class="logOutButtonHamburguesa">Cerrar Sesión</button>
                 </ul>
             </div>
             <div class="redes_hamburguesa">
-                <a href="https://www.instagram.com/cafefrutal/"><img src="/public/assets/img/icons/instagram.png" alt="Ícono Instagram"></a>
-                <a href="https://www.facebook.com/CafeFrutal"><img src="/public/assets/img/icons/facebook.png" alt="Ícono Facebook"></a>
-                <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/assets/img/icons/whatsapp.png" alt="Ícono Whatsapp"></a>
+                <a href="https://www.instagram.com/cafefrutal/"><img src="/public/imgs/icons/instagram.png" alt="Ícono Instagram"></a>
+                <a href="https://www.facebook.com/CafeFrutal"><img src="/public/imgs/icons/facebook.png" alt="Ícono Facebook"></a>
+                <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/imgs/icons/whatsapp.png" alt="Ícono Whatsapp"></a>
             </div>
     </div>
     <!--NAV-->
@@ -55,7 +55,7 @@
     <!--MAIN-->
     <main>
         <figure class="contenedor_whatsapp" id="contenedor_whatsapp">
-            <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/assets/img/icons/whatsapp.png" alt="Logo whatsapp"></a>
+            <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/imgs/icons/whatsapp.png" alt="Logo whatsapp"></a>
         </figure>
         <section class="contenedor_principal">
             <figure class="contenedor_carrousel">
