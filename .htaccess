@@ -1,0 +1,7 @@
+# Habilitar la reescritura de URL
+RewriteEngine On
+
+# Redirigir todas las solicitudes al archivo index.php, si no se encuentra el archivo
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php [QSA,L]
