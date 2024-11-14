@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 require __DIR__ . '/vendor/autoload.php';
 
 // Configurar Flight para que use 'views' como directorio de plantillas
-Flight::set('flight.views.path', '../views');
+Flight::set('flight.views.path', __DIR__ . '/views');
 
 // Ruta para la página de inicio
 Flight::route('/', function(){
