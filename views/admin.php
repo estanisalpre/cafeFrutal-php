@@ -2,6 +2,7 @@
 // Incluir el archivo de conexión a la base de datos
 include 'db.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,10 +33,12 @@ include 'db.php';
         <p id="infoPanel">Tu espacio para agregar, editar o eliminar productos</p>
         <section class="newProductSection" id="newProductSection">
             <h3>Agrega un nuevo producto</h3>
-            <form action="/add-product" method="POST">
-                <!-- <input type="file" name="productImg" id="producitImg" required> -->
+            <form class="form" action="/controllers/add-product.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="productImg" id="producitImg" required>
                 <input type="text" name="prodName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="price" id="price" required placeholder="Precio">
+                <label for="available">Disponible:</label>
+                <input type="checkbox" name="available" id="available">
                 <input class="addButtonInput" type="submit" value="Agregar">
             </form>
         </section>
