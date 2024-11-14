@@ -4,7 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Cargar Composer
-require '../vendor/autoload.php';
+//require '../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // Configurar Flight para que use 'views' como directorio de plantillas
 Flight::set('flight.views.path', '../views');
