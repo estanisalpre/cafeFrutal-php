@@ -50,7 +50,7 @@
         <button class="buttonCarta"><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafeFrutal">Nuestra carta</a></button>
         <button id="adminButton" class="adminButton">🔒Administración</button>
         <button id="logOutButton" class="logOutButton">Cerrar Sesión</button>
-        <img class="icon_hamburguesa" id="icon_hamburguesa" src="/public/assets/img/icons/menu_hamburguesa.png" alt="Ícono Menu Hamburguesa">
+        <img class="icon_hamburguesa" id="icon_hamburguesa" src="/public/imgs/icons/menu_hamburguesa.png" alt="Ícono Menu Hamburguesa">
     </nav>
     <!--MAIN-->
     <main>
@@ -81,7 +81,7 @@
                         <button><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal">Nuestra carta</a></button>
                     </article>
                 </div>
-                <img class="logo_fondo_animado" src="/public/assets/img/logo/logo_planta.png" alt="Logo Fondo Movimiento">
+                <img class="logo_fondo_animado" src="/public/imgs/logo/logo_planta.png" alt="Logo Fondo Movimiento">
             </article>
         </section>
         <section class="contenedor_frase" id="nosotros">
@@ -97,30 +97,30 @@
             </article>
             <div class="cont_inferior_productos">
                 <article class="contenedor_cafes">
-                    <h1>Café Especialidad<img src="/public/assets/img/icons/producto_cafe.png" alt="Ícono Bolsa Café"></h1>
+                    <h1>Café Especialidad<img src="/public/imgs/icons/producto_cafe.png" alt="Ícono Bolsa Café"></h1>
                     <article class="productos_cafes">
                         <div class="cafe_01">
-                            <img src="/public/assets/img/products/cafe_anayansi.jpeg" alt="Café Anayansi">
+                            <img src="/public/imgs/products/cafe_anayansi.jpeg" alt="Café Anayansi">
                             <h2>ANAYANSI</h2>
                             <button id="firstDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_02">
-                            <img src="/public/assets/img/products/cafe_cochadas.jpeg" alt="Café Cochadas">
+                            <img src="/public/imgs/products/cafe_cochadas.jpeg" alt="Café Cochadas">
                             <h2 id="spanCoffeeName">COCHADAS</h2>
                             <button id="secondDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_03">
-                            <img src="/public/assets/img/products/cafe_deorigen.jpeg" alt="Café de Origen">
+                            <img src="/public/imgs/products/cafe_deorigen.jpeg" alt="Café de Origen">
                             <h2>DE ORIGEN</h2>
                             <button id="thirdDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_04">
-                            <img src="/public/assets/img/products/cafe_lunaazul.jpeg" alt="Café Luna azul">
+                            <img src="/public/imgs/products/cafe_lunaazul.jpeg" alt="Café Luna azul">
                             <h2>LUNA AZUL</h2>
                             <button id="fourthDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="seeAllProducts" id="seeAllProducts">
-                            <img src="/public/assets/img/icons/moreProducts.png" alt="Ícono Ver Más (Lupa)">
+                            <img src="/public/imgs/icons/moreProducts.png" alt="Ícono Ver Más (Lupa)">
                             <button id="moreProductsButton">VER MÁS</button></a>
                         </div>
                     </article>
@@ -128,24 +128,24 @@
                 </article>
                 <div class="cont_productos_derecho">
                     <article class="contenedor_pasteleria_reposteria">
-                        <h1>Pastelería <img src="/public/assets/img/icons/pasteleria.png" alt="Ícono Pasteleria"> Respostería <img src="/public/assets/img/icons/reposteria.png" alt="Ícono Reposteria"></h1>
+                        <h1>Pastelería <img src="/public/imgs/icons/pasteleria.png" alt="Ícono Pasteleria"> Respostería <img src="/public/imgs/icons/reposteria.png" alt="Ícono Reposteria"></h1>
                         <figure class="pasteleria_productos">
                             <figure class="pasteleria_izquierdo">
-                                <img src="/public/assets/img/products/canela_roll.jpeg" alt="Canela Roll">
+                                <img src="/public/imgs/products/canela_roll.jpeg" alt="Canela Roll">
                             </figure>
                             <figure class="pasteleria_derecho">
-                                <img src="/public/assets/img/products/muffin.jpeg" alt="Muffin">
-                                <img src="/public/assets/img/products/sandwich.jpeg" alt="Sandwich">
-                                <img src="/public/assets/img/products/almuerzo.jpeg" alt="Almuerzo">
-                                <img src="/public/assets/img/products/rollo_01.jpeg" alt="Rollo">
-                                <img src="/public/assets/img/products/rollo_02.jpeg" alt="Rollo">
-                                <img src="/public/assets/img/products/muffin_2.jpeg" alt="Muffin">
-                                <img src="/public/assets/img/products/cheesecake_frutos_rojos.jpeg" alt="Cheesecake Frutos rojos">
-                                <img src="/public/assets/img/products/cheesecake_maracuya.jpeg" alt="Cheesecake Maracuya">
-                                <img src="/public/assets/img/products/postres.jpeg" alt="Postres">
-                                <img src="/public/assets/img/products/rollo_03.jpeg" alt="Rollo">
-                                <img src="/public/assets/img/products/alfajores.jpeg" alt="Alfajores">
-                                <img src="/public/assets/img/products/croissant.jpg" alt="Croissant">
+                                <img src="/public/imgs/products/muffin.jpeg" alt="Muffin">
+                                <img src="/public/imgs/products/sandwich.jpeg" alt="Sandwich">
+                                <img src="/public/imgs/products/almuerzo.jpeg" alt="Almuerzo">
+                                <img src="/public/imgs/products/rollo_01.jpeg" alt="Rollo">
+                                <img src="/public/imgs/products/rollo_02.jpeg" alt="Rollo">
+                                <img src="/public/imgs/products/muffin_2.jpeg" alt="Muffin">
+                                <img src="/public/imgs/products/cheesecake_frutos_rojos.jpeg" alt="Cheesecake Frutos rojos">
+                                <img src="/public/imgs/products/cheesecake_maracuya.jpeg" alt="Cheesecake Maracuya">
+                                <img src="/public/imgs/products/postres.jpeg" alt="Postres">
+                                <img src="/public/imgs/products/rollo_03.jpeg" alt="Rollo">
+                                <img src="/public/imgs/products/alfajores.jpeg" alt="Alfajores">
+                                <img src="/public/imgs/products/croissant.jpg" alt="Croissant">
                             </figure>
                         </figure>
                     </article>
@@ -164,17 +164,17 @@
                     <p>09:00am - 10:30pm</p>
                 </article>
             </article>
-            <img class="cafe_central" src="/public/assets/img/icons/cafe_granos_2.png" alt="">
+            <img class="cafe_central" src="/public/imgs/icons/cafe_granos_2.png" alt="">
             <article class="medio_de_pago">
                 <article class="medios">
                     <h1>Medios de pago</h1>
                     <h2>Efectivo, débito, crédito y transferencias</h2>
                 </article>
                 <figure class="logos_pagos">
-                    <img src="/public/assets/img/icons/logo_visa.png" alt="Logo Visa">
-                    <img src="/public/assets/img/icons/mastercard.png" alt="Logo Mastercard">
-                    <img src="/public/assets/img/icons/bancolombia.png" alt="Logo Bancolombia">
-                    <img src="/public/assets/img/icons/nequi.png" alt="Logo Nequi">
+                    <img src="/public/imgs/icons/logo_visa.png" alt="Logo Visa">
+                    <img src="/public/imgs/icons/mastercard.png" alt="Logo Mastercard">
+                    <img src="/public/imgs/icons/bancolombia.png" alt="Logo Bancolombia">
+                    <img src="/public/imgs/icons/nequi.png" alt="Logo Nequi">
                 </figure>
             </article>
         </section>
@@ -186,11 +186,11 @@
             <div class="tazasCafe">
                 <h1>Nuestro arte 🤎☕</h1>
                 <figure class="contTazasCafe">
-                    <img src="/public/assets/img/cafe_frutal/taza_01.jpeg" alt="Taza Café">
-                    <img src="/public/assets/img/cafe_frutal/taza_02.jpeg" alt="Taza Café">
-                    <img src="/public/assets/img/cafe_frutal/taza_03.jpeg" alt="Taza Café">
-                    <img src="/public/assets/img/cafe_frutal/taza_04.jpeg" alt="Taza Café">
-                    <img src="/public/assets/img/cafe_frutal/taza_05.jpeg" alt="Taza Café">
+                    <img src="/public/imgs/cafe_frutal/taza_01.jpeg" alt="Taza Café">
+                    <img src="/public/imgs/cafe_frutal/taza_02.jpeg" alt="Taza Café">
+                    <img src="/public/imgs/cafe_frutal/taza_03.jpeg" alt="Taza Café">
+                    <img src="/public/imgs/cafe_frutal/taza_04.jpeg" alt="Taza Café">
+                    <img src="/public/imgs/cafe_frutal/taza_05.jpeg" alt="Taza Café">
                 </figure>
             </div>
         </section>
@@ -230,11 +230,11 @@
                     </form>
                     <figure class="redes_form">
                         <figure class="redes_01">
-                            <a href="https://www.facebook.com/CafeFrutal"><img src="/public/assets/img/icons/facebook.png" alt="Logo Facebook"></a>
+                            <a href="https://www.facebook.com/CafeFrutal"><img src="/public/imgs/icons/facebook.png" alt="Logo Facebook"></a>
                             <a href="https://www.facebook.com/CafeFrutal">Café Frutal</a>
                         </figure>
                         <figure class="redes_02">
-                            <a href="https://www.instagram.com/cafefrutal/"><img src="/public/assets/img/icons/instagram.png" alt="Logo Instagram"></a>
+                            <a href="https://www.instagram.com/cafefrutal/"><img src="/public/imgs/icons/instagram.png" alt="Logo Instagram"></a>
                             <a href="https://www.instagram.com/cafefrutal/">@cafefrutal</a>
                         </figure>
                     </figure>
@@ -286,7 +286,7 @@
     </main>
     <!--FOOTER-->
     <footer>
-        <img src="/public/assets/img/logo/logo_horizontal_light.png" alt="Logo Claro Horizontal Cafe Frutal">
+        <img src="/public/imgs/logo/logo_horizontal_light.png" alt="Logo Claro Horizontal Cafe Frutal">
         <article class="info_footer">
             <p class="primer_p">Web Desarrollada por</p>
             <p class="segundo_p">Estanislao Salinas Previte - estanisprevite@hotmail.com</p>
