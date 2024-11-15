@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    loadProductList();  // Cargar la lista de productos al inicio
+    //loadProductList();  // Cargar la lista de productos al inicio
 });
 
 // Función para cargar la lista de productos desde el servidor
