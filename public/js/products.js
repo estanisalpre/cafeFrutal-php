@@ -42,11 +42,3 @@ function backToIndex(){
         })
     }
 }
-
-function obtenerProductos() {
-    // Aquí iría la lógica para obtener los productos, por ejemplo, desde una base de datos
-    return [
-        ['id' => 1, 'nombre' => 'Producto 1', 'precio' => 100],
-        ['id' => 2, 'nombre' => 'Producto 2', 'precio' => 200]
-    ];
-}
