@@ -166,26 +166,29 @@ main{
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                border: 3px solid black;
 
-                span{
-                    @include sizes(100%,50px);
-                    @include displayFlex();
-                    font-size: $sm;
-                    background-image: $backgroundImage;
+                div{
+                    span{
+                        @include sizes(100%,50px);
+                        @include displayFlex();
+                        font-size: $sm;
+                        background-image: $backgroundImage;
+                        border: 1px solid red;
+                    }
                 }
-
+                div span:first-child{
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+                div span:nth-child(2){
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    height: 40px;
+                    font-size: $md;
+                    font-weight: $bold;
+                }
             } 
-            div span:first-child{
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-            }
-            div span:nth-child(2){
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                height: 40px;
-                font-size: $md;
-                font-weight: $bold;
-            }
         }
     }
     p{
