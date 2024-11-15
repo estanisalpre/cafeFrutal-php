@@ -35,6 +35,11 @@ include 'db.php';
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
             <div id="products">
             <?php
+                if (is_array($productos) || $productos instanceof Countable) {
+                    $count = count($productos);
+                } else {
+                    $count = 0;  // O cualquier valor predeterminado adecuado
+                }
                 if (count($products) > 0) {
                     // Mostrar los productos disponibles
                     foreach ($products as $product) {
