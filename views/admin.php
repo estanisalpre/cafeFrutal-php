@@ -33,7 +33,7 @@ include 'db.php';
         <section class="newProductSection" id="newProductSection">
             <h3>Agrega un nuevo producto</h3>
             <form class="form" action="/add-product.php" method="POST">
-               <!--  <input type="file" name="productImg" id="producitImg" required> -->
+                <input type="file" name="productImg" id="producitImg" required>
                 <input type="text" name="prodName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="price" id="price" required placeholder="Precio">
                 <label for="available">Disponible:</label>
