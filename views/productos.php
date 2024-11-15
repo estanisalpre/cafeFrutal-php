@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-$query = "SELECT * FROM productos WHERE disponible = 1"; // Obtener productos disponibles
+$query = "SELECT * FROM products WHERE available = 1"; // Obtener productos disponibles
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
