@@ -1,6 +1,12 @@
 <?php
 include 'db.php';
+
+$query = "SELECT * FROM productos WHERE disponible = 1"; // Obtener productos disponibles
+$stmt = $pdo->prepare($query);
+$stmt->execute();
+$productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,25 +41,18 @@ include 'db.php';
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
             <div id="products">
             <?php
-                if (is_array($productos) || $productos instanceof Countable) {
-                    $count = count($productos);
-                } else {
-                    $count = 0;  // O cualquier valor predeterminado adecuado
-                }
-                if (count($products) > 0) {
-                    // Mostrar los productos disponibles
-                    foreach ($products as $product) {
-                        echo '<div class="product">';
-                        echo '<img src="uploads/' . $product['productImg'] . '" alt="' . $product['productName'] . '">';
-                        echo '<h4>' . $product['productName'] . '</h4>';
-                        echo '<p>Precio: $' . $product['productValue'] . '</p>';
-                        echo '</div>';
+                if (count($productos) > 0) {
+                    foreach ($productos as $producto) {
+                        echo "<div class='product'>";
+                        echo "<h4>" . htmlspecialchars($producto['nombre']) . "</h4>"; // Nombre del producto
+                        echo "<p>" . htmlspecialchars($producto['descripcion']) . "</p>"; // Descripción del producto
+                        echo "<p>Precio: $" . htmlspecialchars($producto['precio']) . "</p>"; // Precio
+                        echo "</div>";
                     }
                 } else {
-                    // Si no hay productos disponibles
-                    echo '<h2>No hay productos disponibles en este momento.</h2>';
+                    echo "<h2>No hay productos disponibles</h2>";
                 }
-            ?>
+                ?>
             </div>
         </section>
         <p>Si tienes dudas o consultas por alguno de nuestros productos, ¡pulsa en whatsapp para comunicarte!</p>
