@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(data => {
             console.log(data); // Mostrar mensaje de éxito o error
-            //loadProductList(); // Actualizar la lista de productos
+            loadProductList(); // Actualizar la lista de productos
         })
         .catch(error => {
             console.error('Error:', error);
         });
     });
 
-    //loadProductList();  // Cargar la lista de productos al inicio
+    loadProductList();  // Cargar la lista de productos al inicio
 });
 
 // Función para cargar la lista de productos desde el servidor
-/* function loadProductList() {
+function loadProductList() {
     fetch('/product-list.php')
         .then(response => response.json())
         .then(products => {
@@ -53,4 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error al cargar productos:', error);
         });
-} */
+}
