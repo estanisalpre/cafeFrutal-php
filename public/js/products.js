@@ -38,7 +38,7 @@ function backToIndex(){
 
     if(backToIndexButton){
         backToIndexButton.addEventListener('click', () => {
-            location.href = '/index.php'
+            location.href = '/'
         })
     }
 }
