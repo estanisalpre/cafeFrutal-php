@@ -7,7 +7,7 @@
     <!--VINCULACIÓN STYLES-->
     <link rel="stylesheet" href="/public/styles/styles.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/public/assets/img/logo/logo_planta.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/imgs/logo/logo_planta.png" type="image/x-icon">
     <!--FUENTES GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

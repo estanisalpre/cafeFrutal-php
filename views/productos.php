@@ -1,3 +1,6 @@
+<?php
+include 'db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="/public/styles/products.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/public/assets/img/logo/logo_planta.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/imgs/logo/logo_planta.png" type="image/x-icon">
     <!--FUENTES GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +21,41 @@
 <body>
     <!--NAV-->
     <nav>
-        <button id="toMyIndex"><img src="/public/assets/img/icons/back.png" alt="Icon Back to the Index">Regresar</button>
-        <img src="/public/assets/img/logo/logo_horizontal.png" alt="Logo Café Frutal">
+        <button id="toMyIndex"><img src="/public/imgs/icons/back.png" alt="Icon Back to the Index">Regresar</button>
+        <img src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal">
     </nav>
     <!--BOTON WHATSAPP-->
     <figure class="whatsappContainer" id="whatsappContainer">
-        <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/assets/img/icons/whatsapp.png" alt="Logo whatsapp"></a>
+        <a href="https://wa.me/573206214348?text=¡Hola!%20Quiero%20contactarme%20con%20Café%20frutal"><img src="/public/imgs/icons/whatsapp.png" alt="Logo whatsapp"></a>
     </figure>
     <!--MAIN-->
     <main>
         <section class="availableSection">
             <h3>Todos nuestros productos</h3>
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
-            <div id="products"></div>
+            <div id="products">
+            <?php
+                if (count($products) > 0) {
+                    // Mostrar los productos disponibles
+                    foreach ($products as $product) {
+                        echo '<div class="product">';
+                        echo '<img src="uploads/' . $product['productImg'] . '" alt="' . $product['productName'] . '">';
+                        echo '<h4>' . $product['productName'] . '</h4>';
+                        echo '<p>Precio: $' . $product['productValue'] . '</p>';
+                        echo '</div>';
+                    }
+                } else {
+                    // Si no hay productos disponibles
+                    echo '<h2>No hay productos disponibles en este momento.</h2>';
+                }
+            ?>
+            </div>
         </section>
         <p>Si tienes dudas o consultas por alguno de nuestros productos, ¡pulsa en whatsapp para comunicarte!</p>
     </main>
     <!--FOOTER-->
     <footer>
-        <img src="/public/assets/img/logo/logo_horizontal_light.png" alt="Logo Claro Horizontal Cafe Frutal">
+        <img src="/public/imgs/logo/logo_horizontal_light.png" alt="Logo Claro Horizontal Cafe Frutal">
         <article class="info_footer">
             <p class="primer_p">Web Desarrollada por</p>
             <p class="segundo_p">Estanislao Salinas Previte - estanisprevite@hotmail.com</p>
