@@ -11,30 +11,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recoger los datos del formulario
     $productName = $_POST['prodName'];
     $productValue = $_POST['price'];
-    $available = isset($_POST['available']) ? 1 : 0;
+    $available = isset($_POST['available']) ? 1 : 0; 
     $productImg = ''; 
 
     // Verificar si se cargó una imagen
     if (isset($_FILES['productImg']) && $_FILES['productImg']['error'] == 0) {
-        // Validar que el archivo sea una imagen (JPG, PNG)
-        $allowedTypes = ['image/jpeg', 'image/png'];
-        $fileType = $_FILES['productImg']['type'];
+        // Definir la ruta donde se guardará la imagen
+        $uploadDir = 'uploads/';
+        $uploadFile = $uploadDir . basename($_FILES['productImg']['name']);
 
-        if (in_array($fileType, $allowedTypes)) {
-            // Definir la ruta donde se guardará la imagen
-            $uploadDir = 'uploads/';
-            $uploadFile = $uploadDir . basename($_FILES['productImg']['name']);
-
-            // Intentar mover la imagen al directorio de carga
-            if (move_uploaded_file($_FILES['productImg']['tmp_name'], $uploadFile)) {
-                $productImg = $uploadFile;  // Guardar la ruta de la imagen en la base de datos
-            } else {
-                echo "Error al mover la imagen al directorio de carga.";
-                exit;
-            }
-        } else {
-            echo "Solo se permiten archivos JPG o PNG.";
-            exit;
+        // Intentar mover la imagen al directorio de carga
+        if (move_uploaded_file($_FILES['productImg']['tmp_name'], $uploadFile)) {
+            $productImg = $uploadFile;  // Guardar la ruta de la imagen en la base de datos
         }
     }
 
@@ -62,4 +50,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: /views/admin.php');
     exit;
 }
-?>
+?> 
