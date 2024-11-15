@@ -11,7 +11,7 @@ include 'db.php';
     <!--CSS-->
     <link rel="stylesheet" href="/public/styles/admin.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/public/assets/img/logo/logo_planta.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/imgs/logo/logo_planta.png" type="image/x-icon">
     <!--FUENTES GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@ include 'db.php';
     <!--NAV-->
     <nav>
         <button id="addButton">AGREGAR PRODUCTO</button>
-        <img id="toIndex" src="/public/assets/img/logo/logo_horizontal.png" alt="Logo Café Frutal">
+        <img id="toIndex" src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal">
         <button id="listButton">VER LISTA</button>
     </nav>
     <!--MAIN-->
