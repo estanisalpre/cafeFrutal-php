@@ -1,10 +1,11 @@
 <?php
-include 'db.php';
+    include 'db.php';
 
-$query = "SELECT * FROM products WHERE available = 1"; // Obtener productos disponibles
-$stmt = $pdo->prepare($query);
-$stmt->execute();
-$productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $query = "SELECT idProduct, productImg, productName, productValue, available FROM productos WHERE available = 1";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    var_dump($productos);
 ?>
 
 <!DOCTYPE html>
@@ -41,18 +42,22 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
             <div id="products">
             <?php
+                // Asegúrate de que $productos contiene los datos correctos
                 if (count($productos) > 0) {
                     foreach ($productos as $producto) {
-                        echo "<div class='product'>";
-                        echo "<h4>" . htmlspecialchars($producto['nombre']) . "</h4>"; // Nombre del producto
-                        echo "<p>" . htmlspecialchars($producto['descripcion']) . "</p>"; // Descripción del producto
-                        echo "<p>Precio: $" . htmlspecialchars($producto['precio']) . "</p>"; // Precio
-                        echo "</div>";
+                        // Accede a la clave correcta 'productName' en lugar de 'nombre'
+                        if (isset($producto['productName'])) {
+                            echo "<h4>" . htmlspecialchars($producto['productName']) . "</h4>";
+                            echo "<img src='" . htmlspecialchars($producto['productImg']) . "' alt='" . htmlspecialchars($producto['productName']) . "'>";
+                            echo "<p>Precio: " . htmlspecialchars($producto['productValue']) . "</p>";
+                        } else {
+                            echo "<h4>Nombre no disponible</h4>";
+                        }
                     }
                 } else {
-                    echo "<h2>No hay productos disponibles</h2>";
+                    echo "No hay productos disponibles.";
                 }
-                ?>
+            ?>
             </div>
         </section>
         <p>Si tienes dudas o consultas por alguno de nuestros productos, ¡pulsa en whatsapp para comunicarte!</p>
