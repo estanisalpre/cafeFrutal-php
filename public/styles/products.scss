@@ -63,12 +63,13 @@ html, body{
 //Nav
 nav{
     @include displayFlex($flexDirection:row, $justifyContent: space-between);
-    @include sizes($height: 1px);
+    @include sizes($height: 100px);
     padding-left: 15px;
     padding-right: 15px;
     position: fixed;
     top: 0;
     background-image: $coffeImageColor;
+    display: none;
 
     img{
         @include sizes(auto,50%);
@@ -157,22 +158,23 @@ main{
             flex-wrap: wrap;
             padding: 10px;
             gap: 5px;
-            border: 3px solid black;
             
-
+            .card{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
             div{
                 @include sizes(170px,250px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-color: $lightFontColor;
-                border: 1px solid red;
 
-                div{
+                span{
                     @include sizes(100%,50px);
                     @include displayFlex();
                     font-size: $sm;
                     background-image: $backgroundImage;
-                    border: 2px solid blue;
                 }
 
             } 
