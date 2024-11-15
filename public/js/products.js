@@ -1,4 +1,4 @@
-//Funcionalidad de productos.html
+//Funcionalidad de productos.php
 
 document.addEventListener('DOMContentLoaded', () => {
     //availableProducts();
@@ -38,7 +38,7 @@ function backToIndex(){
 
     if(backToIndexButton){
         backToIndexButton.addEventListener('click', () => {
-            location.href = './index.html'
+            location.href = '/index.php'
         })
     }
 }
