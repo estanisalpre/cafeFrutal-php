@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(data => {
             console.log(data); // Mostrar mensaje de éxito o error
-            loadProductList(); // Actualizar la lista de productos
+            //loadProductList(); // Actualizar la lista de productos
         })
         .catch(error => {
             console.error('Error:', error);
