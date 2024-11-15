@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const price = document.querySelector('#price').value;
 
         // Enviar los datos al servidor
-        fetch('/controllers/add-product.php', {
+        fetch('/add-product.php', {
             method: 'POST',
             body: new FormData(form)
         })
