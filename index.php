@@ -21,11 +21,7 @@ Flight::route('/admin', function(){
 
 // Ruta para la sección de productos
 Flight::route('/productos', function(){
-    // Obtener los productos (puede ser de la base de datos, un archivo, etc.)
-    $productos = obtenerProductos(); 
-
-    // Pasar los productos a la vista 'productos'
-    Flight::render('productos', array('productos' => $productos));
+    Flight::render('productos');  // Carga views/productos.php
 });
 
 // Iniciar Flight
