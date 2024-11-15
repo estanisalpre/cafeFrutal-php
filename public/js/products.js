@@ -1,7 +1,7 @@
 //Funcionalidad de productos.html
 
 document.addEventListener('DOMContentLoaded', () => {
-    availableProducts();
+    //availableProducts();
     backToIndex();
 })
 
