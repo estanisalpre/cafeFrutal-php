@@ -167,7 +167,7 @@ main{
                 background-color: $lightFontColor;
                 border: 1px solid red;
 
-                h4,p{
+                div{
                     @include sizes(100%,50px);
                     @include displayFlex();
                     font-size: $sm;

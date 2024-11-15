@@ -42,19 +42,18 @@
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
             <div id="products">
             <?php
-                if (count($productos) > 0) {
-                    foreach ($productos as $producto) {
-                        if (isset($producto['productName'])) {
-                            echo "<h4>" . htmlspecialchars($producto['productName']) . "</h4>";
-                            echo "<img src='" . htmlspecialchars($producto['productImg']) . "' alt='" . htmlspecialchars($producto['productName']) . "'>";
-                            echo "<p>Precio: " . htmlspecialchars($producto['productValue']) . "</p>";
-                        } else {
-                            echo "<h4>Nombre no disponible</h4>";
-                        }
-                    }
-                } else {
-                    echo "No hay productos disponibles.";
-                }
+               if (!empty($productos)): ?>
+                <?php foreach ($productos as $producto): ?>
+                    <div class="card" style="background-image: url('<?php echo htmlspecialchars($producto['productImg']); ?>');">
+                        <div class="card-content">
+                            <span class="product-name"><?php echo htmlspecialchars($producto['productName']); ?></span>
+                            <span class="product-price">$<?php echo htmlspecialchars($producto['productValue']); ?></span>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <p>No hay productos disponibles.</p>
+            <?php endif; 
             ?>
             </div>
         </section>
