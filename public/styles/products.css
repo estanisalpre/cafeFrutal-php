@@ -24,7 +24,6 @@ nav {
   position: fixed;
   top: 0;
   background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
-  display: none;
 }
 nav img {
   width: auto;

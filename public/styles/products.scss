@@ -69,7 +69,6 @@ nav{
     position: fixed;
     top: 0;
     background-image: $coffeImageColor;
-    display: none;
 
     img{
         @include sizes(auto,50%);
