@@ -1,11 +1,11 @@
 <?php
     include 'db.php';
 
-    $query = "SELECT idProduct, productImg, productName, productValue, available FROM products WHERE available = 1";
+    $query = "SELECT productImg, productName, productValue, available FROM products WHERE available = 1";
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($productos);
+    //var_dump($productos);
 ?>
 
 <!DOCTYPE html>
