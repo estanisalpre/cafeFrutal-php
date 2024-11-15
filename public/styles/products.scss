@@ -63,13 +63,12 @@ html, body{
 //Nav
 nav{
     @include displayFlex($flexDirection:row, $justifyContent: space-between);
-    @include sizes($height: 100px);
+    @include sizes($height: 1px);
     padding-left: 15px;
     padding-right: 15px;
     position: fixed;
     top: 0;
     background-image: $coffeImageColor;
-    display: none;
 
     img{
         @include sizes(auto,50%);
