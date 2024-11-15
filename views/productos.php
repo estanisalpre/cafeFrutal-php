@@ -42,10 +42,8 @@
             <div id="emptyProducts"><h2>No hay productos aún</h2></div>
             <div id="products">
             <?php
-                // Asegúrate de que $productos contiene los datos correctos
                 if (count($productos) > 0) {
                     foreach ($productos as $producto) {
-                        // Accede a la clave correcta 'productName' en lugar de 'nombre'
                         if (isset($producto['productName'])) {
                             echo "<h4>" . htmlspecialchars($producto['productName']) . "</h4>";
                             echo "<img src='" . htmlspecialchars($producto['productImg']) . "' alt='" . htmlspecialchars($producto['productName']) . "'>";
