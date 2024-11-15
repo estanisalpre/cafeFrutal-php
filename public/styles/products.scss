@@ -159,16 +159,13 @@ main{
             padding: 10px;
             gap: 5px;
             
-            .card{
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
             div{
                 @include sizes(170px,250px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
-                background-color: $lightFontColor;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
 
                 span{
                     @include sizes(100%,50px);
