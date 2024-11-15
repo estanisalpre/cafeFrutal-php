@@ -6,7 +6,7 @@ console.log('leyendo adminjs')
 document.addEventListener('DOMContentLoaded', () => {
     allButtons();
     console.log('leyendo all buttons')
-    
+
     const form = document.querySelector('form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Función para cargar la lista de productos desde el servidor
-function loadProductList() {
+/* function loadProductList() {
     fetch('/product-list.php')
         .then(response => response.json())
         .then(products => {
@@ -53,4 +53,4 @@ function loadProductList() {
         .catch(error => {
             console.error('Error al cargar productos:', error);
         });
-}
+} */
