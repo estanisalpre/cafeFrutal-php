@@ -33,7 +33,7 @@ function toIndex(){
     
     if(toIndex){
         toIndex.addEventListener('click', () => {
-            location.href = '/index.php'
+            location.href = '/'
         })
     }
 }
