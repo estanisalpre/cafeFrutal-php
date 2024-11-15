@@ -4,10 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Cargar Composer
-//require '../vendor/autoload.php';
 require __DIR__ . '/vendor/autoload.php';
 
-// Configurar Flight para que use 'views' como directorio de plantillas
+// Views como directorio de plantillas
 Flight::set('flight.views.path', __DIR__ . '/views');
 
 // Ruta para la página de inicio
@@ -22,7 +21,11 @@ Flight::route('/admin', function(){
 
 // Ruta para la sección de productos
 Flight::route('/productos', function(){
-    Flight::render('productos');  // Carga views/productos.php
+    // Obtener los productos (puede ser de la base de datos, un archivo, etc.)
+    $productos = obtenerProductos(); 
+
+    // Pasar los productos a la vista 'productos'
+    Flight::render('productos', array('productos' => $productos));
 });
 
 // Iniciar Flight
