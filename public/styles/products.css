@@ -18,7 +18,7 @@ nav {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   position: fixed;
@@ -119,6 +119,7 @@ main .availableSection #emptyProducts {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 main .availableSection #emptyProducts h2 {
   width: 250px;
@@ -155,6 +156,7 @@ main .availableSection #products {
   flex-wrap: wrap;
   padding: 10px;
   gap: 5px;
+  border: 3px solid black;
 }
 main .availableSection #products div {
   width: 170px;
@@ -165,8 +167,9 @@ main .availableSection #products div {
   align-items: center;
   box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
   background-color: #ececec;
+  border: 1px solid red;
 }
-main .availableSection #products div span {
+main .availableSection #products div div {
   width: 100%;
   height: 50px;
   display: flex;
@@ -175,6 +178,7 @@ main .availableSection #products div span {
   align-items: center;
   font-size: 14px;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border: 2px solid blue;
 }
 main .availableSection #products div span:first-child {
   border-bottom-left-radius: 20px;

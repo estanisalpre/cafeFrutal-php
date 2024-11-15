@@ -33,7 +33,7 @@ function toIndex(){
     
     if(toIndex){
         toIndex.addEventListener('click', () => {
-            location.href = '/'
+            location.href = '/index.php'
         })
     }
 }
@@ -53,7 +53,7 @@ function toAdminPanel(){
             const passwordValue = password.value 
 
             if(usernameValue === "armando2024" && passwordValue === "armando1233"){
-                location.href = './admin'
+                location.href = '/admin'
             } else {
                 alert('Credenciales incorrectas')
             }
