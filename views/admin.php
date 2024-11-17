@@ -46,7 +46,9 @@ include 'db.php';
             </form>
         </section>
         <section class="productList" id="productListSection">
-            <?php foreach ($products as $product): ?>
+            <h1>Editar o eliminar productos</h1>
+            <?php 
+            foreach ($products as $product): ?>
                 <div class="product" data-id="<?= $product['id']; ?>">
                     <div>
                         <h4><?= htmlspecialchars($product['productName']); ?></h4>
