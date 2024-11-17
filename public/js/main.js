@@ -4,6 +4,7 @@ import { allButtons } from "./functions.js"
 document.addEventListener('DOMContentLoaded', () => {
     //Todos los botones
     allButtons();
+    trysomething();
 })
 
 function trysomething(){
