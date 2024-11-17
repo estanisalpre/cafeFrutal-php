@@ -154,7 +154,7 @@
         </section>
         <section class="cont_informacion_comercial" id="horarios">
             <article class="horarios">
-                <h1>Horarios</h1>
+                <h1 onclick="trysomething()">Horarios</h1>
                 <article class="horario_01">
                     <h2>Lunes a Jueves</h2>
                     <p>09:00am - 09:30pm</p>

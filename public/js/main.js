@@ -5,3 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Todos los botones
     allButtons();
 })
+
+function trysomething(){
+    alert('probamos')
+}
