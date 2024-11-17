@@ -266,7 +266,7 @@ main{
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
-    background-image: var(--DarkBackgroundGradient);
+    background-image: url(/public/imgs/backgrounds/coffeeGrain.png)
 }
 /*Contenedor Carrousel*/
 .contenedor_carrousel{
