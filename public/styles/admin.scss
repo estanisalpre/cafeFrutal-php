@@ -214,30 +214,25 @@ main{
             height: 20px;
         }
         .product{
-            border: 1px solid black;
             @include sizes();
             @include displayFlex($flexDirection:row, $justifyContent: space-around);
             gap: 5px;
 
             div{
-                border: 2px solid red;
                 @include displayFlex($flexDirection:row);
                 @include sizes($height: 100px);
                 gap: 5px;
 
                 h4{
-                    border: 1px solid blue;
                     @include sizes();
                     @include displayFlex();
                 }
                 p{
-                    border: 1px solid green;
                     @include sizes();
                     font-size: $md;
                     @include displayFlex();
                 }
                 img{
-                    border: 1px solid orange;
                     @include sizes();
                 }
             }
