@@ -9,14 +9,14 @@ include 'db.php';
     header('Content-Type: application/json');
     $data = json_decode(file_get_contents('php://input'), true);
 
-    if (!isset($data['idProduct'])) {
+    if (!isset($data['id'])) {
         echo json_encode(['success' => false, 'message' => 'ID no proporcionado']);
         exit;
     }
 
     try {
-        $stmt = $pdo->prepare("DELETE FROM products WHERE idProduct = :idProduct");
-        $stmt->bindParam(':idProduct', $data['idProduct'], PDO::PARAM_INT);
+        $stmt = $pdo->prepare("DELETE FROM products WHERE idProduct = :id");
+        $stmt->bindParam(':idProduct', $data['id'], PDO::PARAM_INT);
         $success = $stmt->execute();
         echo json_encode(['success' => $success]);
     } catch (PDOException $e) {
