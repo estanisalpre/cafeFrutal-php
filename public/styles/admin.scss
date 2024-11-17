@@ -222,7 +222,7 @@ main{
             div{
                 border: 2px solid red;
                 @include displayFlex($flexDirection:row);
-                @include sizes($height: 80px);
+                @include sizes($height: 100px);
                 gap: 5px;
 
                 h4{

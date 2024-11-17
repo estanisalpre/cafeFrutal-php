@@ -214,7 +214,7 @@ main .productList .product div {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 100px;
   gap: 5px;
 }
 main .productList .product div h4 {
