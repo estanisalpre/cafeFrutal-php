@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: productId })
                 })
+                console.log('entramos al delete_product')
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data)
                     if (data.success) {
                         productElement.remove(); // Eliminar el producto del DOM
                         alert("Producto eliminado exitosamente.");
@@ -89,47 +91,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-/* //ELIMINAR PRODUCTOS
-function deleteProduct(id) {
-    if (confirm("¿Seguro que deseas eliminar este producto?")) {
-        fetch('delete_product.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                document.querySelector(`.product[data-id="${id}"]`).remove();
-                alert("Producto eliminado exitosamente.");
-            } else {
-                alert("Error al eliminar el producto.");
-            }
-        })
-        .catch(error => console.error('Error:', error));
-    }
-}
-
-//EDITAR PRODUCTOS
-function editProduct(id) {
-    const newName = prompt("Introduce el nuevo nombre del producto:");
-    const newValue = prompt("Introduce el nuevo precio del producto:");
-    if (newName && newValue) {
-        fetch('edit_product.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id, productName: newName, productValue: newValue })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert("Producto editado exitosamente.");
-                location.reload();
-            } else {
-                alert("Error al editar el producto.");
-            }
-        })
-        .catch(error => console.error('Error:', error));
-    }
-} */
