@@ -48,6 +48,7 @@ nav #logout {
   background-color: transparent;
   background-image: none;
   margin-top: 0px;
+  box-shadow: none;
 }
 nav button {
   padding: 2px;
