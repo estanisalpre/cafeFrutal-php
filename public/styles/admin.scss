@@ -216,7 +216,7 @@ main{
         .product{
             border: 1px solid black;
             @include sizes();
-            @include displayFlex($flexDirection:row);
+            @include displayFlex($flexDirection:row, $justifyContent: space-around);
             gap: 5px;
 
             div{
