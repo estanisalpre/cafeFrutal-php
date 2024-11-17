@@ -196,7 +196,6 @@
         </section>
         <section class="contenedor_contacto" id="contacto">
             <div class="tarjeta_contacto">
-                <figure class="cont_imagen_nosotros"></figure>
                 <article class="formulario_contacto">
                     <div class="titulo_formulario">
                         <h1>Contáctanos</h1>
