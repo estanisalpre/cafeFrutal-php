@@ -18,11 +18,13 @@ export function allButtons(){
 
 //Burguer Menu
 function openCloseBurguerMenu(){
+    console.log('entramos a openCloseBurguerMenu')
     const openIcon = document.getElementById('icon_hamburguesa')
     const burguerMenu = document.getElementById('menu_hamburguesa')
     const closeIcon = document.getElementById('cerrar_menu')
 
     if(openIcon){
+        console.log('podemos abrir menu')
         burguerMenu.style.display = 'flex'
     }
 
