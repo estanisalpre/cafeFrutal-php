@@ -208,6 +208,7 @@ main{
     .productList{
         display: flex;
         overflow: scroll;
+        gap: 5px;
 
         h3{
             height: 20px;
@@ -216,11 +217,13 @@ main{
             border: 1px solid black;
             @include sizes();
             @include displayFlex($flexDirection:row);
+            gap: 5px;
 
             div{
                 border: 2px solid red;
                 @include displayFlex($flexDirection:row);
                 @include sizes($height: 80px);
+                gap: 5px;
 
                 h4{
                     border: 1px solid blue;
