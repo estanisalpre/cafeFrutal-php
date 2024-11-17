@@ -28,7 +28,7 @@
                     <li><img class="li_01" src="/public/imgs/icons/taza_cafe.png" alt=""><a href="#nosotros">NOSOTROS</a></li>
                     <li><img class="li_02" src="/public/imgs/icons/cafe_granos_2.png" alt=""><a href="#productos">PRODUCTOS</a></li>
                     <li><img class="li_03" src="/public/imgs/icons/planta_cafe.png" alt=""><a href="#contacto">CONTACTO</a></li>
-                    <button><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafefrutalHamburguesa">Nuestra carta</a></button>
+                    <button><a href="/public/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafefrutalHamburguesa">Nuestra carta</a></button>
                     <button id="adminButtonBurguer" class="adminButtonHamburguesa">🔒Administración</button>
                     <button id="logOutButton" class="logOutButtonHamburguesa">Cerrar Sesión</button>
                 </ul>
@@ -47,7 +47,7 @@
             <li><a href="#productos">PRODUCTOS</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
         </ul>
-        <button class="buttonCarta"><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafeFrutal">Nuestra carta</a></button>
+        <button class="buttonCarta"><a href="/public/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal" class="cartaCafeFrutal">Nuestra carta</a></button>
         <button id="adminButton" class="adminButton">🔒Administración</button>
         <button id="logOutButton" class="logOutButton">Cerrar Sesión</button>
         <img class="icon_hamburguesa" id="icon_hamburguesa" src="/public/imgs/icons/menu_hamburguesa.png" alt="Ícono Menu Hamburguesa">
@@ -78,7 +78,7 @@
                         <button><a href="#horarios">Horarios</a></button>
                         <button><a href="#ubicacion">Ubicación</a></button>
                         <button><a href="#contacto">Redes</a></button>
-                        <button><a href="/public/assets/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal">Nuestra carta</a></button>
+                        <button><a href="/public/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal">Nuestra carta</a></button>
                     </article>
                 </div>
                 <img class="logo_fondo_animado" src="/public/imgs/logo/logo_planta.png" alt="Logo Fondo Movimiento">
