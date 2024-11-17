@@ -1,12 +1,10 @@
 import { allButtons } from "./functions.js"
 
-console.log('leyendo adminjs')
-
 // Obtener el formulario y agregar el evento submit
 document.addEventListener('DOMContentLoaded', () => {
     allButtons();
-    console.log('leyendo all buttons')
 
+    //FUNCIONALIDAD FORMULARIO AGREGAR PRODUCTOS
     const form = document.querySelector('form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -21,36 +19,57 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.text())
         .then(data => {
-            console.log('Éxito'); // Mostrar mensaje de éxito o error
-            //loadProductList(); // Actualizar la lista de productos
+            console.log('Éxito');
         })
         .catch(error => {
             console.error('Error:', error);
         });
     });
 
-    //loadProductList();  // Cargar la lista de productos al inicio
+    //FUNCIONALIDAD BOTON EDITAR
+    
 });
 
-// Función para cargar la lista de productos desde el servidor
-/* function loadProductList() {
-    fetch('/product-list.php')
-        .then(response => response.json())
-        .then(products => {
-            const productListSection = document.getElementById('productListSection');
-            productListSection.innerHTML = '';  // Limpiar la lista antes de cargarla
-            products.forEach(product => {
-                const productItem = document.createElement('div');
-                productItem.classList.add('product-item');
-                productItem.innerHTML = `
-                    <h4>${product.name}</h4>
-                    <p>Precio: $${product.price}</p>
-                    <p>Disponible: ${product.available ? 'Sí' : 'No'}</p>
-                `;
-                productListSection.appendChild(productItem);
-            });
+//ELIMINAR PRODUCTOS
+function deleteProduct(id) {
+    if (confirm("¿Seguro que deseas eliminar este producto?")) {
+        fetch('delete_product.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id })
         })
-        .catch(error => {
-            console.error('Error al cargar productos:', error);
-        });
-} */
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.querySelector(`.product[data-id="${id}"]`).remove();
+                alert("Producto eliminado exitosamente.");
+            } else {
+                alert("Error al eliminar el producto.");
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+}
+
+//EDITAR PRODUCTOS
+function editProduct(id) {
+    const newName = prompt("Introduce el nuevo nombre del producto:");
+    const newValue = prompt("Introduce el nuevo precio del producto:");
+    if (newName && newValue) {
+        fetch('edit_product.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id, productName: newName, productValue: newValue })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Producto editado exitosamente.");
+                location.reload();
+            } else {
+                alert("Error al editar el producto.");
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+}

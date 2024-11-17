@@ -41,7 +41,22 @@ include 'db.php';
                 <input class="addButtonInput" type="submit" value="Agregar">
             </form>
         </section>
-        <section class="productList" id="productListSection"></section>
+        <section class="productList" id="productListSection">
+            <?php foreach ($products as $product): ?>
+                <div class="product" data-id="<?= $product['id']; ?>">
+                    <div>
+                        <h4><?= htmlspecialchars($product['productName']); ?></h4>
+                        <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
+                        <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
+                        <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="edit-btn" onclick="editProduct(<?= $product['id']; ?>)">Editar</button>
+                        <button class="delete-btn" onclick="deleteProduct(<?= $product['id']; ?>)">Eliminar</button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </section>
         <!--EDIT MODAL-->
         <div id="editForm">
             <h2>Editar Producto</h2>
