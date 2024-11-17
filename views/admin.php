@@ -58,7 +58,9 @@ try {
         <section class="productList" id="productListSection">
             <h1>Editar o eliminar productos</h1>
             <?php 
-                foreach ($products as $product): ?>
+                foreach ($products as $product):
+                    print_r($products); // Para ver si la variable $products tiene datos.
+                     ?>
                     <div class="product" data-id="<?= $product['id']; ?>">
                         <div>
                             <h4><?= htmlspecialchars($product['productName']); ?></h4>
