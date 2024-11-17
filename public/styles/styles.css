@@ -8,6 +8,7 @@
     --FontRaleway: "Raleway", sans-serif;
     --FontCursiveCaderville: "Cedarville Cursive", cursive;
     --BackgroundCafe: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+    --DarkBackgroundGradient: linear-gradient(to right, #434343 0%, black 100%);
     --DarkFont: #252525;
     --LightFont: #e4e4e4;
     --ColorCafeFont: #3a2200;
@@ -265,6 +266,7 @@ main{
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
+    background-image: var(--DarkBackgroundGradient);
 }
 /*Contenedor Carrousel*/
 .contenedor_carrousel{
