@@ -8,8 +8,8 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Lato", sans-serif;
-  /*  overflow-y: hidden;
-   overflow-x: hidden; */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 nav {
@@ -121,29 +121,6 @@ main .newProductSection, main .productList {
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 20px 1px rgb(66, 66, 66);
-  /* table{
-      @include sizes();
-      display: grid;
-      place-items: center;
-      overflow-y: scroll;
-
-      td{
-          @include sizes(300px,40px);
-          border-bottom: 1px solid black;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-          text-align: center;
-
-          button{
-              border-radius: 3px;
-              background-color: transparent;
-              cursor: pointer;
-              border: 0px;
-              @include sizes(70%);
-          }
-      }
-
-  } */
 }
 main .newProductSection h3, main .productList h3 {
   width: 100%;
@@ -190,7 +167,8 @@ main .newProductSection {
 }
 main .productList {
   display: none;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   gap: 5px;
 }
 main .productList h3 {
