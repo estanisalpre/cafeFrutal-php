@@ -84,6 +84,9 @@ nav{
     }
     #logout{
         @include sizes(60px,auto);
+        background-color: transparent;
+        background-image: none;
+        margin-top: 0px;
     }
     button{
         @include buttonDesign(20%);

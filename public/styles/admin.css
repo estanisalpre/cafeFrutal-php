@@ -45,6 +45,9 @@ nav img:hover {
 nav #logout {
   width: 60px;
   height: auto;
+  background-color: transparent;
+  background-image: none;
+  margin-top: 0px;
 }
 nav button {
   padding: 2px;
