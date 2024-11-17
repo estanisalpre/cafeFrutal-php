@@ -229,10 +229,14 @@ main{
                 p{
                     border: 1px solid green;
                     @include sizes();
+                    font-size: $md;
                 }
                 img{
                     border: 1px solid orange;
                     @include sizes();
+                }
+                button{
+                    @include buttonDesign();
                 }
             }
         }
