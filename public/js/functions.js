@@ -143,9 +143,9 @@ function allProducts(){
     }
 }
 
-/* // Cerrar el formulario de edición
+// Cerrar el formulario de edición
 function closeEditForm() {
     const editForm = document.getElementById('editForm');
     editForm.style.display = 'none';
-} */
+}
   

@@ -80,15 +80,15 @@ try {
             ?>
         </section>
         <!--EDIT MODAL-->
-        <div id="editForm">
+        <div id="editForm" style="display: none;">
             <h2>Editar Producto</h2>
-            <form>
+            <form id="editProductForm">
                 <label for="editProductName">Nombre del Producto:</label>
                 <input type="text" id="editProductName" readonly/>
-        
+            
                 <label for="editProductAvailable">Disponible:</label>
                 <input type="checkbox" id="editProductAvailable"/>
-        
+            
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
                 <button type="button" onclick="closeEditForm()">Cancelar</button>
             </form>

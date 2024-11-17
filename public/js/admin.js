@@ -57,24 +57,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Seleccionar todos los botones "Editar"
     const editButtons = document.querySelectorAll(".edit-btn");
+    const editForm = document.getElementById("editForm");
+    const editProductName = document.getElementById("editProductName");
+    const editProductAvailable = document.getElementById("editProductAvailable");
+    const submitEditButton = document.getElementById("submitEditButton");
+    let currentProductId = null;
+
     editButtons.forEach(button => {
         button.addEventListener("click", (event) => {
             const productElement = event.target.closest(".product");
-            const productId = productElement.dataset.id;
+            currentProductId = productElement.dataset.id;
 
-            //Solicitamos nuevos datos
-            const newName = prompt("Introduce el nuevo nombre del producto:");
-            const newValue = prompt("Introduce el nuevo precio del producto:");
-            const newAvailable = prompt("¿Disponible? 1. Si | 2. No");
+            const productName = productElement.querySelector('h4').textContent;
+            const productAvailable = productElement.querySelector('p').textContent.includes('Sí');
 
-            //Convertimos la diponibilidad a booleano
-            const available = (newAvailable === '1') ? 1 : 0;
+            editProductName.value = productName;
+            editProductAvailable.checked = productAvailable;
 
-            if (newName && newValue && newAvailable) {
+             // Mostrar el formulario
+            editForm.style.display = 'block';
+        });
+
+        // Enviar los datos al servidor para actualizar el producto
+        submitEditButton.addEventListener("click", () => {
+            const newName = editProductName.value;
+            const newAvailable = editProductAvailable.checked ? 1 : 0;
+
+            // Verificar que los campos estén completos
+            if (newName) {
                 fetch('/edit_product.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ id: productId, productName: newName, productValue: newValue, available: available })
+                    body: JSON.stringify({ 
+                        id: currentProductId, 
+                        productName: newName, 
+                        available: newAvailable 
+                    })
                 })
                 .then(response => response.json())
                 .then(data => {
@@ -86,6 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 })
                 .catch(error => console.error('Error:', error));
+            } else {
+                alert("El nombre del producto es obligatorio.");
             }
         });
     });
