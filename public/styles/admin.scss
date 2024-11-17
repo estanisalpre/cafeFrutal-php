@@ -228,16 +228,22 @@ main{
                 h4{
                     border: 1px solid blue;
                     @include sizes();
+                    @include displayFlex();
                 }
                 p{
                     border: 1px solid green;
                     @include sizes();
                     font-size: $md;
+                    @include displayFlex();
                 }
                 img{
                     border: 1px solid orange;
                     @include sizes();
                 }
+            }
+            .product-button{
+                width: 350px;
+
                 button{
                     @include buttonDesign(100px);
                 }
