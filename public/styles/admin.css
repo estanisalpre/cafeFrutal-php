@@ -214,6 +214,7 @@ main .productList .product div {
   width: 100%;
   height: 100px;
   gap: 5px;
+  border-bottom: 1px solid black;
 }
 main .productList .product div h4 {
   width: 100%;
@@ -231,6 +232,7 @@ main .productList .product div p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  box-shadow: none;
 }
 main .productList .product div img {
   width: 100%;

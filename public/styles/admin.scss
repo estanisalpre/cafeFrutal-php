@@ -222,6 +222,7 @@ main{
                 @include displayFlex($flexDirection:row);
                 @include sizes($height: 100px);
                 gap: 5px;
+                border-bottom: 1px solid black;
 
                 h4{
                     @include sizes();
@@ -231,6 +232,7 @@ main{
                     @include sizes();
                     font-size: $md;
                     @include displayFlex();
+                    box-shadow: none;
                 }
                 img{
                     @include sizes();
