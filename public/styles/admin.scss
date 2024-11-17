@@ -206,7 +206,7 @@ main{
         display: none;
     }
     .productList{
-        display: none;
+        display: flex;
 
         h1{
             @include sizes($height: 40px);
