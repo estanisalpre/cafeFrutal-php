@@ -16,7 +16,7 @@ include 'db.php';
 
     try {
         $stmt = $pdo->prepare("DELETE FROM products WHERE idProduct = :id");
-        $stmt->bindParam(':idProduct', $data['id'], PDO::PARAM_INT);
+        $stmt->bindParam(':id', $data['id'], PDO::PARAM_INT);
         $success = $stmt->execute();
         echo json_encode(['success' => $success]);
     } catch (PDOException $e) {
