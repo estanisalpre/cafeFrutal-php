@@ -68,6 +68,7 @@ nav{
     top: 0px;
     z-index: 9999;
     background-image: $backgroundImage;
+    display: none;
 
     img{
         @include sizes(12%,auto);
