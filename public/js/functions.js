@@ -14,6 +14,8 @@ export function allButtons(){
     addProductSection();
     //Mostrar lista
     showProductsList();
+    //Cerrar lista en admin
+    closeEditForm();
 }
 
 //Burguer Menu
