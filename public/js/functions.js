@@ -1,5 +1,7 @@
 //Funcionalidad del admin.html
 export function allButtons(){
+    //Abrir y cerrar menu hamburguesa
+    openCloseBurguerMenu();
     //Admin button
     adminButton();
     //Hacia el panel de admin
@@ -12,6 +14,21 @@ export function allButtons(){
     addProductSection();
     //Mostrar lista
     showProductsList();
+}
+
+//Burguer Menu
+function openCloseBurguerMenu(){
+    const openIcon = document.getElementById('icon_hamburguesa')
+    const burguerMenu = document.getElementById('menu_hamburguesa')
+    const closeIcon = document.getElementById('cerrar_menu')
+
+    if(openIcon){
+        burguerMenu.style.display = 'flex'
+    }
+
+    if(closeIcon){
+        burguerMenu.style.display = 'none'
+    }
 }
 
 //Boton admin
