@@ -5,7 +5,6 @@
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    //var_dump($productos);
 ?>
 
 <!DOCTYPE html>
