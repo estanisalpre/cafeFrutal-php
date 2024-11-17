@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Frutal - Medellin</title>
+    <!--SEO-->
+    <meta name="description" content="Disfruta de un buen café en Medellin. En Café Frutal te garantizamos una experiencia única con productos artesanales deliciosos acompañados de buenos cafés. Vendemos al por mayor y aceptamos todos los medios de pagos.">
+    <meta name="keywords" content="cafe, medellin café, café en medellín, productos artesanales, pasteleria horneada, pasteleria congelada, café y croissant, café ambientado, café frutal, cafe frutal">
+    <meta name="robots" content="index, follow">
     <!--VINCULACIÓN STYLES-->
     <link rel="stylesheet" href="/public/styles/styles.css">
     <!--FAVICON-->
