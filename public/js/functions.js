@@ -148,6 +148,12 @@ function allProducts(){
 // Cerrar el formulario de edición
 function closeEditForm() {
     const editForm = document.getElementById('editForm');
-    editForm.style.display = 'none';
+    const cancelButton = document.getElementById('closeEditForm')
+
+    if(cancelButton){
+        cancelButton.addEventListener('click', () => {
+            editForm.style.display = 'none';
+        })
+    }
 }
   
