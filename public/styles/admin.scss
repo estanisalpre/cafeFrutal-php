@@ -178,7 +178,7 @@ main{
                 background-image: $backgroundImage;
             }
         }
-        table{
+        /* table{
             @include sizes();
             display: grid;
             place-items: center;
@@ -200,7 +200,7 @@ main{
                 }
             }
             
-        }
+        } */
     }
     .newProductSection{
         display: none;
@@ -208,14 +208,24 @@ main{
     .productList{
         display: flex;
 
-        h1{
-            @include sizes($height: 40px);
-            @include displayFlex();
-            align-items: flex-start;
-            padding-left: 10px;
-            background-image: $backgroundImage;
-            font-size: $lg;
-            border-radius: 0px;
+        .product{
+            border: 1px solid black;
+            @include displayFlex($flexDirection:row);
+
+            div{
+                border: 2px solid red;
+                @include displayFlex($flexDirection:row);
+
+                h4{
+                    border: 1px solid blue;
+                }
+                p{
+                    border: 1px solid green;
+                }
+                img{
+                    border: 1px solid orange;
+                }
+            }
         }
     }
     #editForm{

@@ -122,6 +122,29 @@ main .newProductSection, main .productList {
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 20px 1px rgb(66, 66, 66);
+  /* table{
+      @include sizes();
+      display: grid;
+      place-items: center;
+      overflow-y: scroll;
+
+      td{
+          @include sizes(300px,40px);
+          border-bottom: 1px solid black;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          text-align: center;
+
+          button{
+              border-radius: 3px;
+              background-color: transparent;
+              cursor: pointer;
+              border: 0px;
+              @include sizes(70%);
+          }
+      }
+
+  } */
 }
 main .newProductSection h3, main .productList h3 {
   width: 100%;
@@ -163,47 +186,34 @@ main .newProductSection form .addButtonInput, main .productList form .addButtonI
 main .newProductSection form .addButtonInput:hover, main .productList form .addButtonInput:hover {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
-main .newProductSection table, main .productList table {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  overflow-y: scroll;
-}
-main .newProductSection table td, main .productList table td {
-  width: 300px;
-  height: 40px;
-  border-bottom: 1px solid black;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
-}
-main .newProductSection table td button, main .productList table td button {
-  border-radius: 3px;
-  background-color: transparent;
-  cursor: pointer;
-  border: 0px;
-  width: 70%;
-  height: 100%;
-}
 main .newProductSection {
   display: none;
 }
 main .productList {
   display: flex;
 }
-main .productList h1 {
-  width: 100%;
-  height: 40px;
+main .productList .product {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  align-items: flex-start;
-  padding-left: 10px;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  font-size: 22px;
-  border-radius: 0px;
+}
+main .productList .product div {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+main .productList .product div h4 {
+  border: 1px solid blue;
+}
+main .productList .product div p {
+  border: 1px solid green;
+}
+main .productList .product div img {
+  border: 1px solid orange;
 }
 main #editForm {
   width: 90%;

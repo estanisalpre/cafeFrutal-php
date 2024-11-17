@@ -56,7 +56,7 @@ try {
             </form>
         </section>
         <section class="productList" id="productListSection">
-            <h1>Editar o eliminar productos</h1>
+            <h3>Editar o eliminar productos</h3>
             <?php 
                 if (isset($products) && !empty($products)) {
                     foreach ($products as $product): ?>
