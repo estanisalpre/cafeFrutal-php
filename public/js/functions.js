@@ -74,7 +74,7 @@ function toAdminPanel(){
             const passwordValue = password.value 
 
             if(usernameValue === "armando2024" && passwordValue === "armando1233"){
-                location.href = './admin'
+                location.href = '/admin'
             } else {
                 alert('Credenciales incorrectas')
             }

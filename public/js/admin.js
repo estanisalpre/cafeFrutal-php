@@ -4,6 +4,7 @@ import { allButtons } from "./functions.js"
 document.addEventListener('DOMContentLoaded', () => {
     allButtons();
 
+    console.log('Entramos al DOM de admin.js')
     //FUNCIONALIDAD FORMULARIO AGREGAR PRODUCTOS
     const form = document.querySelector('form');
     form.addEventListener('submit', function (event) {
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Seleccionar todos los botones "Eliminar"
     const deleteButtons = document.querySelectorAll(".delete-btn");
     deleteButtons.forEach(button => {
+        console.log('estamos por entrar al delete-btn for each')
         button.addEventListener("click", (event) => {
             // Obtener el ID del producto del atributo data-id del contenedor padre
             const productElement = event.target.closest(".product");
