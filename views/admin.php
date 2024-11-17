@@ -51,8 +51,8 @@ include 'db.php';
                         <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
                     </div>
                     <div class="product-buttons">
-                        <button class="edit-btn" onclick="editProduct(<?= $product['id']; ?>)">Editar</button>
-                        <button class="delete-btn" onclick="deleteProduct(<?= $product['id']; ?>)">Eliminar</button>
+                        <button class="edit-btn">Editar</button>
+                        <button class="delete-btn">Eliminar</button>
                     </div>
                 </div>
             <?php endforeach; ?>

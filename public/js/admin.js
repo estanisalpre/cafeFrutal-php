@@ -26,11 +26,69 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //FUNCIONALIDAD BOTON EDITAR
-    
+    // Seleccionar todos los botones "Eliminar"
+    const deleteButtons = document.querySelectorAll(".delete-btn");
+    deleteButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            // Obtener el ID del producto del atributo data-id del contenedor padre
+            const productElement = event.target.closest(".product");
+            const productId = productElement.dataset.id;
+
+            // Confirmar eliminación
+            if (confirm("¿Seguro que deseas eliminar este producto?")) {
+                fetch('/delete_product.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: productId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        productElement.remove(); // Eliminar el producto del DOM
+                        alert("Producto eliminado exitosamente.");
+                    } else {
+                        alert("Error al eliminar el producto.");
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        });
+    });
+
+    // Seleccionar todos los botones "Editar"
+    const editButtons = document.querySelectorAll(".edit-btn");
+    editButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            // Obtener el ID del producto del atributo data-id del contenedor padre
+            const productElement = event.target.closest(".product");
+            const productId = productElement.dataset.id;
+
+            // Solicitar los nuevos valores al usuario
+            const newName = prompt("Introduce el nuevo nombre del producto:");
+            const newValue = prompt("Introduce el nuevo precio del producto:");
+
+            if (newName && newValue) {
+                fetch('/edit_product.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: productId, productName: newName, productValue: newValue })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Producto editado exitosamente.");
+                        location.reload(); // Recargar la página para reflejar los cambios
+                    } else {
+                        alert("Error al editar el producto.");
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        });
+    });
 });
 
-//ELIMINAR PRODUCTOS
+/* //ELIMINAR PRODUCTOS
 function deleteProduct(id) {
     if (confirm("¿Seguro que deseas eliminar este producto?")) {
         fetch('delete_product.php', {
@@ -72,4 +130,4 @@ function editProduct(id) {
         })
         .catch(error => console.error('Error:', error));
     }
-}
+} */
