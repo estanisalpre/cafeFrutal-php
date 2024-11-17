@@ -68,7 +68,6 @@ nav{
     top: 0px;
     z-index: 9999;
     background-image: $backgroundImage;
-    display: none;
 
     img{
         @include sizes(12%,auto);
@@ -206,7 +205,7 @@ main{
         display: none;
     }
     .productList{
-        display: flex;
+        display: none;
         overflow: scroll;
         gap: 5px;
 
