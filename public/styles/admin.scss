@@ -220,7 +220,7 @@ main{
             div{
                 border: 2px solid red;
                 @include displayFlex($flexDirection:row);
-                @include sizes($height: 100px);
+                @include sizes($height: 80px);
 
                 h4{
                     border: 1px solid blue;
@@ -236,7 +236,7 @@ main{
                     @include sizes();
                 }
                 button{
-                    @include buttonDesign();
+                    @include buttonDesign(100px);
                 }
             }
         }
