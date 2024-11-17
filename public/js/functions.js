@@ -62,33 +62,45 @@ function toIndex(){
 }
 
 //Hacia panel administrativo
-function toAdminPanel(){
-    const userName = document.getElementById('userName')
-    const password = document.getElementById('password')
-    const submitLogin = document.getElementById('submitLogin')
-    const backButton = document.getElementById('backButton')
+function toAdminPanel() {
+    const userName = document.getElementById('userName');
+    const password = document.getElementById('password');
+    const submitLogin = document.getElementById('submitLogin');
+    const backButton = document.getElementById('backButton');
 
-    if(submitLogin){
+    if (submitLogin) {
         submitLogin.addEventListener('click', (e) => {
             e.preventDefault();
 
-            const usernameValue = userName.value 
-            const passwordValue = password.value 
+            const usernameValue = userName.value;
+            const passwordValue = password.value;
 
-            if(usernameValue === "armando2024" && passwordValue === "armando1233"){
-                location.href = '/admin'
-            } else {
-                alert('Credenciales incorrectas')
-            }
-        })
+            // Enviar las credenciales al servidor usando Fetch
+            fetch('/login.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username: usernameValue, password: passwordValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    location.href = '/admin'; // Redirigir al panel administrativo si el login es exitoso
+                } else {
+                    alert('Credenciales incorrectas');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
     }
 
-    //Para cerrar modal de login
-    if(backButton){
-        const sectionForm = document.getElementById('sectionForm')
+    // Para cerrar el modal de login
+    if (backButton) {
+        const sectionForm = document.getElementById('sectionForm');
         backButton.addEventListener('click', () => {
-            sectionForm.style.display = 'none'
-        })
+            sectionForm.style.display = 'none';
+        });
     }
 }
 

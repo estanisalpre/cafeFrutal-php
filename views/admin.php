@@ -1,9 +1,18 @@
 <?php
+include 'db.php';
+
+session_start(); // Iniciar sesión
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['user'])) {
+    // Si no hay sesión activa, redirigir al login
+    header("Location: /");
+    exit;
+}
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-include 'db.php';
 
 try {
     // Hacer la consulta para obtener los productos

@@ -241,7 +241,7 @@
             </div>
         </section>
         <section id="sectionForm" class="sectionForm">
-            <form class="loginForm">
+            <form action="login.php" method="POST" class="loginForm">
                 <span id="errorMessage">❌Credenciales incorrectas</span>
                 <p>Ingresa tus credenciales</p>
                 <input type="text" name="userName" id="userName" required placeholder="Usuario" maxlength="11">
@@ -249,6 +249,12 @@
                 <button id="submitLogin" type="submit">Ingresar</button>
                 <button id="backButton">Regresar</button>
             </form>
+            <?php
+                // Mostrar error si las credenciales son incorrectas
+                if (isset($error)) {
+                    echo "<p>$error</p>";
+                }
+            ?>
         </section>
         <section id="panelContainer" class="panelContainer">
             <div class="topContainer">
