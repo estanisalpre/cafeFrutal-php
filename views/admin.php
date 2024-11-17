@@ -58,22 +58,25 @@ try {
         <section class="productList" id="productListSection">
             <h1>Editar o eliminar productos</h1>
             <?php 
-                foreach ($products as $product):
-                    print_r($products); // Para ver si la variable $products tiene datos.
-                     ?>
-                    <div class="product" data-id="<?= $product['id']; ?>">
-                        <div>
-                            <h4><?= htmlspecialchars($product['productName']); ?></h4>
-                            <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
-                            <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
-                            <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
+                if (isset($products) && !empty($products)) {
+                    foreach ($products as $product): ?>
+                        <div class="product" data-id="<?= $product['idProduct']; ?>">
+                            <div>
+                                <h4><?= htmlspecialchars($product['productName']); ?></h4>
+                                <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
+                                <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
+                                <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="edit-btn">Editar</button>
+                                <button class="delete-btn">Eliminar</button>
+                            </div>
                         </div>
-                        <div class="product-buttons">
-                            <button class="edit-btn" data-id="<?= $product['id']; ?>">Editar</button>
-                            <button class="delete-btn" data-id="<?= $product['id']; ?>">Eliminar</button>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach;
+                } else {
+                    echo "<p>No hay productos disponibles.</p>";
+                }
+            ?>
         </section>
         <!--EDIT MODAL-->
         <div id="editForm">
