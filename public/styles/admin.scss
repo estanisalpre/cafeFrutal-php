@@ -220,15 +220,19 @@ main{
             div{
                 border: 2px solid red;
                 @include displayFlex($flexDirection:row);
+                @include sizes($height: 40px);
 
                 h4{
                     border: 1px solid blue;
+                    @include sizes();
                 }
                 p{
                     border: 1px solid green;
+                    @include sizes();
                 }
                 img{
                     border: 1px solid orange;
+                    @include sizes();
                 }
             }
         }
