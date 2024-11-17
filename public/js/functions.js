@@ -24,12 +24,15 @@ function openCloseBurguerMenu(){
     const closeIcon = document.getElementById('cerrar_menu')
 
     if(openIcon){
-        console.log('podemos abrir menu')
-        burguerMenu.style.display = 'flex'
+        openIcon.addEventListener('click', () => {
+            burguerMenu.style.display = 'flex'
+        })
     }
 
     if(closeIcon){
-        burguerMenu.style.display = 'none'
+        closeIcon.addEventListener('click', () => {
+             burguerMenu.style.display = 'none'
+        })
     }
 }
 
