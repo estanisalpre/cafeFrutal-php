@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Confirmar eliminación
             if (confirm("¿Seguro que deseas eliminar este producto?")) {
+                console.log('entramos al delete_product')
                 fetch('/delete_product.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: productId })
                 })
-                console.log('entramos al delete_product')
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
