@@ -207,6 +207,7 @@ main{
     }
     .productList{
         display: flex;
+        overflow: scroll;
 
         h3{
             height: 20px;
@@ -215,7 +216,6 @@ main{
             border: 1px solid black;
             @include sizes();
             @include displayFlex($flexDirection:row);
-            overflow: scroll;
 
             div{
                 border: 2px solid red;

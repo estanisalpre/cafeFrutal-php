@@ -191,6 +191,7 @@ main .newProductSection {
 }
 main .productList {
   display: flex;
+  overflow: scroll;
 }
 main .productList h3 {
   height: 20px;
@@ -203,7 +204,6 @@ main .productList .product {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  overflow: scroll;
 }
 main .productList .product div {
   border: 2px solid red;
