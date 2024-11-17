@@ -30,8 +30,8 @@ html{
 }
 body{
     width: 100%;
-    background-color: black;
     font-family: var(--FontRaleway);
+    background-image: url(/public/imgs/backgrounds/coffeeGrain.png)
 }
 /*Nav*/
 nav{
@@ -235,7 +235,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: var(--LightBackground);
     overflow: hidden;
 }
 /*Contenedor Whatsapp*/
@@ -266,7 +265,6 @@ main{
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
-    background-image: url(/public/imgs/backgrounds/coffeeGrain.png)
 }
 /*Contenedor Carrousel*/
 .contenedor_carrousel{
@@ -393,7 +391,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: var(--LightBackground);
 }
 .frase{
     padding: 10px;
