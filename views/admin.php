@@ -62,6 +62,7 @@ try {
                     foreach ($products as $product): ?>
                         <div class="product" data-id="<?= $product['idProduct']; ?>">
                             <div>
+                                <h4><?= htmlspecialchars($product['idProduct']); ?></h4>
                                 <h4><?= htmlspecialchars($product['productName']); ?></h4>
                                 <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
                                 <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
