@@ -62,7 +62,7 @@ try {
                     foreach ($products as $product): ?>
                         <div class="product" data-id="<?= $product['idProduct']; ?>">
                             <div>
-                                <h4><?= htmlspecialchars($product['idProduct']); ?></h4>
+                                <h2><?= htmlspecialchars($product['idProduct']); ?></h2>
                                 <h4><?= htmlspecialchars($product['productName']); ?></h4>
                                 <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
                                 <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
@@ -84,7 +84,7 @@ try {
             <h2>Editar Producto</h2>
             <form id="editProductForm">
                 <label for="editProductName">Nombre del Producto:</label>
-                <input type="text" id="editProductName" />
+                <input type="text" id="editProductName"/>
 
                 <label for="editProductValue">Precio del Producto:</label>
                 <input type="number" id="editProductValue" step="0.01" />

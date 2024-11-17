@@ -201,7 +201,7 @@ main{
                 gap: 5px;
                 border-bottom: 1px solid black;
 
-                h4{
+                h4,h2{
                     @include sizes();
                     @include displayFlex();
                 }

@@ -193,7 +193,7 @@ main .productList .product div {
   gap: 5px;
   border-bottom: 1px solid black;
 }
-main .productList .product div h4 {
+main .productList .product div h4, main .productList .product div h2 {
   width: 100%;
   height: 100%;
   display: flex;
