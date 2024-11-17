@@ -55,8 +55,8 @@ $bold: 600;
 html, body{
     @include sizes();
     font-family: $latoFont;
-    overflow-y: hidden;
-    overflow-x: hidden;
+   /*  overflow-y: hidden;
+    overflow-x: hidden; */
 }
 
 //Nav
@@ -208,9 +208,15 @@ main{
     .productList{
         display: flex;
 
+        h3{
+            height: 20px;
+        }
         .product{
             border: 1px solid black;
+            @include sizes();
             @include displayFlex($flexDirection:row);
+            display: inline-block;
+            overflow: scroll;
 
             div{
                 border: 2px solid red;
