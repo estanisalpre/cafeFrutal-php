@@ -93,7 +93,7 @@ try {
                 <input type="checkbox" id="editProductAvailable" />
 
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
-                <button type="button" onclick="closeEditForm()">Cancelar</button>
+                <button type="button" id="closeEditForm">Cancelar</button>
             </form>
         </div>
     </main>
