@@ -42,7 +42,7 @@
     <!--NAV-->
     <nav>
         <ul class="ul_nav">
-            <li><a href="/index.html"><img src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal Horizontal"></a></li>
+            <li><a href="/"><img src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal Horizontal"></a></li>
             <li><a href="#nosotros">NOSOTROS</a></li>
             <li><a href="#productos">PRODUCTOS</a></li>
             <li><a href="#contacto">CONTACTO</a></li>
