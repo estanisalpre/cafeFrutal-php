@@ -79,18 +79,21 @@ try {
                 }
             ?>
         </section>
-        <!--EDIT MODAL-->
+       <!--EDIT MODAL-->
         <div id="editForm" style="display: none;">
             <h2>Editar Producto</h2>
             <form id="editProductForm">
                 <label for="editProductName">Nombre del Producto:</label>
-                <input type="text" id="editProductName" readonly/>
-            
+                <input type="text" id="editProductName" />
+
+                <label for="editProductValue">Precio del Producto:</label>
+                <input type="number" id="editProductValue" step="0.01" />
+
                 <label for="editProductAvailable">Disponible:</label>
-                <input type="checkbox" id="editProductAvailable"/>
-            
+                <input type="checkbox" id="editProductAvailable" />
+
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
-                <button type="button" id="closeEditForm">Cancelar</button>
+                <button type="button" onclick="closeEditForm()">Cancelar</button>
             </form>
         </div>
     </main>
