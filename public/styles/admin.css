@@ -212,8 +212,8 @@ main .productList .product div p {
   box-shadow: none;
 }
 main .productList .product div img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 100px;
 }
 main .productList .product .product-buttons {
   width: 350px;

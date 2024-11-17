@@ -212,7 +212,7 @@ main{
                     box-shadow: none;
                 }
                 img{
-                    @include sizes();
+                    @include sizes(auto,100px);
                 }
             }
             .product-buttons{
