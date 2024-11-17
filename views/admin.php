@@ -4,6 +4,16 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include 'db.php';
+
+try {
+    // Hacer la consulta para obtener los productos
+    $stmt = $pdo->prepare("SELECT * FROM products");
+    $stmt->execute();
+    $products = $stmt->fetchAll(PDO::FETCH_ASSOC); // Obtener todos los productos
+
+} catch (PDOException $e) {
+    die("Error al obtener los productos: " . $e->getMessage());
+}
 ?>
 
 <!DOCTYPE html>
@@ -48,20 +58,20 @@ include 'db.php';
         <section class="productList" id="productListSection">
             <h1>Editar o eliminar productos</h1>
             <?php 
-            foreach ($products as $product): ?>
-                <div class="product" data-id="<?= $product['id']; ?>">
-                    <div>
-                        <h4><?= htmlspecialchars($product['productName']); ?></h4>
-                        <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
-                        <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
-                        <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
+                foreach ($products as $product): ?>
+                    <div class="product" data-id="<?= $product['id']; ?>">
+                        <div>
+                            <h4><?= htmlspecialchars($product['productName']); ?></h4>
+                            <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
+                            <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
+                            <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="edit-btn" data-id="<?= $product['id']; ?>">Editar</button>
+                            <button class="delete-btn" data-id="<?= $product['id']; ?>">Eliminar</button>
+                        </div>
                     </div>
-                    <div class="product-buttons">
-                        <button class="edit-btn">Editar</button>
-                        <button class="delete-btn">Eliminar</button>
-                    </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
         </section>
         <!--EDIT MODAL-->
         <div id="editForm">
