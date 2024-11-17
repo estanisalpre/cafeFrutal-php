@@ -77,6 +77,6 @@ include 'db.php';
         </div>
     </main>
     <!--SCRIPTS-->
-    <script type="module" src="/public/js/admin.js"></script>
+    <script type="module" src="/public/js/admin.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
