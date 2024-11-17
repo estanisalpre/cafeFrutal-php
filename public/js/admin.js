@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const productElement = event.target.closest(".product");
             const productId = productElement.dataset.id;
 
+            console.log(productId)
+            
             // Confirmar eliminación
             if (confirm("¿Seguro que deseas eliminar este producto?")) {
                 console.log('entramos al delete_product')
