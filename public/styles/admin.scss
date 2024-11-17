@@ -215,7 +215,6 @@ main{
             border: 1px solid black;
             @include sizes();
             @include displayFlex($flexDirection:row);
-            display: inline-block;
             overflow: scroll;
 
             div{

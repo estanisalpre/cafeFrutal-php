@@ -203,7 +203,6 @@ main .productList .product {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  display: inline-block;
   overflow: scroll;
 }
 main .productList .product div {
