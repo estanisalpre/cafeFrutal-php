@@ -86,7 +86,7 @@ function toAdminPanel() {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    location.href = '/admin'; // Redirigir al panel administrativo si el login es exitoso
+                    location.href = '/admin';
                 } else {
                     alert('Credenciales incorrectas');
                 }

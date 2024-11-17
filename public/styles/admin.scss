@@ -82,6 +82,9 @@ nav{
     img:hover{
         transform: translateY(-10px)
     }
+    #logout{
+        @include sizes(60px,auto);
+    }
     button{
         @include buttonDesign(20%);
     }

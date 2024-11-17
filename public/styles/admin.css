@@ -42,6 +42,10 @@ nav img {
 nav img:hover {
   transform: translateY(-10px);
 }
+nav #logout {
+  width: 60px;
+  height: auto;
+}
 nav button {
   padding: 2px;
   border: 1px solid black;

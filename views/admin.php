@@ -48,6 +48,7 @@ try {
         <button id="addButton">AGREGAR PRODUCTO</button>
         <img id="toIndex" src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal">
         <button id="listButton">VER LISTA</button>
+        <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono de cerrar sesión">
     </nav>
     <!--MAIN-->
     <main>

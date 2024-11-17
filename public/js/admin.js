@@ -114,4 +114,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    //Botón para cerrar sesión
+    const logout = document.getElementById('logout')
+
+    if(logout){
+        logout.addEventListener('click', () => {
+            fetch('/logout.php', {
+                method: 'GET',
+            })
+            .then(response => {
+                // Si la respuesta es exitosa, redirigimos al login
+                if (response.ok) {
+                    window.location.href = '/'; 
+                }
+            })
+            .catch(error => console.error('Error al cerrar sesión:', error));
+        })
+    }
 });
