@@ -85,7 +85,7 @@
                         <button><a href="/public/downloads/Carta_CafeFrutal.pdf" download="Carta_CafeFrutal">Nuestra carta</a></button>
                     </article>
                 </div>
-                <img class="logo_fondo_animado aspect" src="/public/imgs/logo/logo_planta.png" alt="Logo Fondo Movimiento">
+                <img class="logo_fondo_animado" src="/public/imgs/logo/logo_planta.png" alt="Logo Fondo Movimiento">
             </article>
         </section>
         <section class="contenedor_frase" id="nosotros">
@@ -104,27 +104,27 @@
                     <h1>Café Especialidad<img class="aspect" src="/public/imgs/icons/producto_cafe.png" alt="Ícono Bolsa Café"></h1>
                     <article class="productos_cafes">
                         <div class="cafe_01">
-                            <img class="aspect" src="/public/imgs/products/cafe_anayansi.jpeg" alt="Café Anayansi">
+                            <img  src="/public/imgs/products/cafe_anayansi.jpeg" alt="Café Anayansi">
                             <h2>ANAYANSI</h2>
                             <button id="firstDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_02">
-                            <img class="aspect" src="/public/imgs/products/cafe_cochadas.jpeg" alt="Café Cochadas">
+                            <img  src="/public/imgs/products/cafe_cochadas.jpeg" alt="Café Cochadas">
                             <h2 id="spanCoffeeName">COCHADAS</h2>
                             <button id="secondDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_03">
-                            <img class="aspect" src="/public/imgs/products/cafe_deorigen.jpeg" alt="Café de Origen">
+                            <img  src="/public/imgs/products/cafe_deorigen.jpeg" alt="Café de Origen">
                             <h2>DE ORIGEN</h2>
                             <button id="thirdDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_04">
-                            <img class="aspect" src="/public/imgs/products/cafe_lunaazul.jpeg" alt="Café Luna azul">
+                            <img  src="/public/imgs/products/cafe_lunaazul.jpeg" alt="Café Luna azul">
                             <h2>LUNA AZUL</h2>
                             <button id="fourthDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="seeAllProducts" id="seeAllProducts">
-                            <img class="aspect" src="/public/imgs/icons/moreProducts.png" alt="Ícono Ver Más (Lupa)">
+                            <img  src="/public/imgs/icons/moreProducts.png" alt="Ícono Ver Más (Lupa)">
                             <button id="moreProductsButton">VER MÁS</button></a>
                         </div>
                     </article>
@@ -132,10 +132,10 @@
                 </article>
                 <div class="cont_productos_derecho">
                     <article class="contenedor_pasteleria_reposteria">
-                        <h1>Pastelería <img class="aspect" src="/public/imgs/icons/pasteleria.png" alt="Ícono Pasteleria"> Respostería <img class="aspect" src="/public/imgs/icons/reposteria.png" alt="Ícono Reposteria"></h1>
+                        <h1>Pastelería <img src="/public/imgs/icons/pasteleria.png" alt="Ícono Pasteleria"> Respostería <img src="/public/imgs/icons/reposteria.png" alt="Ícono Reposteria"></h1>
                         <figure class="pasteleria_productos">
                             <figure class="pasteleria_izquierdo">
-                                <img class="aspect" src="/public/imgs/products/canela_roll.jpeg" alt="Canela Roll">
+                                <img src="/public/imgs/products/canela_roll.jpeg" alt="Canela Roll">
                             </figure>
                             <figure class="pasteleria_derecho">
                                 <img class="aspect" src="/public/imgs/products/muffin.jpeg" alt="Muffin">
@@ -168,17 +168,17 @@
                     <p>09:00am - 10:30pm</p>
                 </article>
             </article>
-            <img class="cafe_central aspect" src="/public/imgs/icons/cafe_granos_2.png" alt="">
+            <img class="cafe_central" src="/public/imgs/icons/cafe_granos_2.png" alt="">
             <article class="medio_de_pago">
                 <article class="medios">
                     <h1>Medios de pago</h1>
                     <h2>Efectivo, débito, crédito y transferencias</h2>
                 </article>
                 <figure class="logos_pagos">
-                    <img class="aspect" src="/public/imgs/icons/logo_visa.png" alt="Logo Visa">
-                    <img class="aspect" src="/public/imgs/icons/mastercard.png" alt="Logo Mastercard">
-                    <img class="aspect" src="/public/imgs/icons/bancolombia.png" alt="Logo Bancolombia">
-                    <img class="aspect" src="/public/imgs/icons/nequi.png" alt="Logo Nequi">
+                    <img src="/public/imgs/icons/logo_visa.png" alt="Logo Visa">
+                    <img src="/public/imgs/icons/mastercard.png" alt="Logo Mastercard">
+                    <img src="/public/imgs/icons/bancolombia.png" alt="Logo Bancolombia">
+                    <img src="/public/imgs/icons/nequi.png" alt="Logo Nequi">
                 </figure>
             </article>
         </section>
@@ -221,11 +221,11 @@
                     </div>
                     <figure class="redes_form">
                         <figure class="redes_01">
-                            <a href="https://www.facebook.com/CafeFrutal"><img class="aspect" src="/public/imgs/icons/facebook.png" alt="Logo Facebook"></a>
+                            <a href="https://www.facebook.com/CafeFrutal"><img src="/public/imgs/icons/facebook.png" alt="Logo Facebook"></a>
                             <a href="https://www.facebook.com/CafeFrutal">Café Frutal</a>
                         </figure>
                         <figure class="redes_02">
-                            <a href="https://www.instagram.com/cafefrutal/"><img class="aspect" src="/public/imgs/icons/instagram.png" alt="Logo Instagram"></a>
+                            <a href="https://www.instagram.com/cafefrutal/"><img  src="/public/imgs/icons/instagram.png" alt="Logo Instagram"></a>
                             <a href="https://www.instagram.com/cafefrutal/">@cafefrutal</a>
                         </figure>
                     </figure>
