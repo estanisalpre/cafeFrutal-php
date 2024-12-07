@@ -64,9 +64,9 @@
         <section class="contenedor_principal">
             <figure class="contenedor_carrousel">
                 <ul>
-                    <li class="carrousel_01"><img class="img_01 aspect" src="/public/imgs/cafe_frutal/local_nocturno.jpeg" alt="Local de Café Frutal Nocturno"></li>
-                    <li class="carrousel_02"><img class="img_02 aspect" src="/public/imgs/cafe_frutal/taza_08.jpg" alt="Taza de Café exhibida y servida"></li>
-                    <li class="carrousel_03"><img class="img_03 aspect" src="/public/imgs/cafe_frutal/local_interior.jpeg" alt="Imagen del interior del local Café Frutal"></li>
+                    <li class="carrousel_01"><img class="img_01 aspect" src="/public/imgs/cafe_frutal/local_nocturno.webp" alt="Local de Café Frutal Nocturno"></li>
+                    <li class="carrousel_02"><img class="img_02 aspect" src="/public/imgs/cafe_frutal/taza_08.webp" alt="Taza de Café exhibida y servida"></li>
+                    <li class="carrousel_03"><img class="img_03 aspect" src="/public/imgs/cafe_frutal/local_interior.webp" alt="Imagen del interior del local Café Frutal"></li>
                 </ul>
             </figure>
             <article class="contenedor_titulos">
@@ -104,22 +104,22 @@
                     <h1>Café Especialidad<img class="aspect" src="/public/imgs/icons/producto_cafe.png" alt="Ícono Bolsa Café"></h1>
                     <article class="productos_cafes">
                         <div class="cafe_01">
-                            <img  src="/public/imgs/products/cafe_anayansi.jpeg" alt="Café Anayansi">
+                            <img  src="/public/imgs/products/cafe_anayansi.webp" alt="Café Anayansi">
                             <h2>ANAYANSI</h2>
                             <button id="firstDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_02">
-                            <img  src="/public/imgs/products/cafe_cochadas.jpeg" alt="Café Cochadas">
+                            <img  src="/public/imgs/products/cafe_cochadas.webp" alt="Café Cochadas">
                             <h2 id="spanCoffeeName">COCHADAS</h2>
                             <button id="secondDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_03">
-                            <img  src="/public/imgs/products/cafe_deorigen.jpeg" alt="Café de Origen">
+                            <img  src="/public/imgs/products/cafe_deorigen.webp" alt="Café de Origen">
                             <h2>DE ORIGEN</h2>
                             <button id="thirdDiv">¡Quiero esto!</button></a>
                         </div>
                         <div class="cafe_04">
-                            <img  src="/public/imgs/products/cafe_lunaazul.jpeg" alt="Café Luna azul">
+                            <img  src="/public/imgs/products/cafe_lunaazul.webp" alt="Café Luna azul">
                             <h2>LUNA AZUL</h2>
                             <button id="fourthDiv">¡Quiero esto!</button></a>
                         </div>
@@ -135,21 +135,21 @@
                         <h1>Pastelería <img src="/public/imgs/icons/pasteleria.png" alt="Ícono Pasteleria"> Respostería <img src="/public/imgs/icons/reposteria.png" alt="Ícono Reposteria"></h1>
                         <figure class="pasteleria_productos">
                             <figure class="pasteleria_izquierdo">
-                                <img src="/public/imgs/products/canela_roll.jpeg" alt="Canela Roll">
+                                <img src="/public/imgs/products/canela_roll.webp" alt="Producto: Rollo de Canela">
                             </figure>
                             <figure class="pasteleria_derecho">
-                                <img class="aspect" src="/public/imgs/products/muffin.jpeg" alt="Muffin">
-                                <img class="aspect" src="/public/imgs/products/sandwich.jpeg" alt="Sandwich">
-                                <img class="aspect" src="/public/imgs/products/almuerzo.jpeg" alt="Almuerzo">
-                                <img class="aspect" src="/public/imgs/products/rollo_01.jpeg" alt="Rollo">
-                                <img class="aspect" src="/public/imgs/products/rollo_02.jpeg" alt="Rollo">
-                                <img class="aspect" src="/public/imgs/products/muffin_2.jpeg" alt="Muffin">
-                                <img class="aspect" src="/public/imgs/products/cheesecake_frutos_rojos.jpeg" alt="Cheesecake Frutos rojos">
-                                <img class="aspect" src="/public/imgs/products/cheesecake_maracuya.jpeg" alt="Cheesecake Maracuya">
-                                <img class="aspect" src="/public/imgs/products/postres.jpeg" alt="Postres">
-                                <img class="aspect" src="/public/imgs/products/rollo_03.jpeg" alt="Rollo">
-                                <img class="aspect" src="/public/imgs/products/alfajores.jpeg" alt="Alfajores">
-                                <img class="aspect" src="/public/imgs/products/croissant.jpg" alt="Croissant">
+                                <img class="aspect" src="/public/imgs/products/muffin.webp" alt="Producto: Muffin delicioso">
+                                <img class="aspect" src="/public/imgs/products/sandwich.webp" alt="Producto: Sandwich para almuerzo">
+                                <img class="aspect" src="/public/imgs/products/almuerzo.webp" alt="Producto: Plato de almuerzo con champignones">
+                                <img class="aspect" src="/public/imgs/products/rollo_01.webp" alt="Producto: Rollo de Canela">
+                                <img class="aspect" src="/public/imgs/products/rollo_02.webp" alt="Producto: Rollo de Canela">
+                                <img class="aspect" src="/public/imgs/products/muffin_2.webp" alt="Producto: Muffin delicioso">
+                                <img class="aspect" src="/public/imgs/products/cheesecake_frutos_rojos.webp" alt="Producto: Cheesecake Frutos rojos">
+                                <img class="aspect" src="/public/imgs/products/cheesecake_maracuya.webp" alt="Producto: Cheesecake Maracuya">
+                                <img class="aspect" src="/public/imgs/products/postres.webp" alt="Producto: Postres variados en sabores">
+                                <img class="aspect" src="/public/imgs/products/rollo_03.webp" alt="Producto: Rollo de Canela">
+                                <img class="aspect" src="/public/imgs/products/alfajores.webp" alt="Producto: Alfajores artesanales argentinos">
+                                <img class="aspect" src="/public/imgs/products/croissant.webp" alt="Producto: Pan Croissant Artesanal">
                             </figure>
                         </figure>
                     </article>
@@ -190,11 +190,11 @@
             <div class="tazasCafe">
                 <h1>Nuestro arte 🤎☕</h1>
                 <figure class="contTazasCafe">
-                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_01.jpeg" alt="Taza Café">
-                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_02.jpeg" alt="Taza Café">
-                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_03.jpeg" alt="Taza Café">
-                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_04.jpeg" alt="Taza Café">
-                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_05.jpeg" alt="Taza Café">
+                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_01.webp" alt="Una exquisita taza de café para la tarde">
+                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_02.webp" alt="Una exquisita taza de café para el algo">
+                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_03.webp" alt="Una exquisita taza de café para desayunar">
+                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_04.webp" alt="Una exquisita taza de café para acompañar">
+                    <img class="aspect" src="/public/imgs/cafe_frutal/taza_05.webp" alt="Una exquisita taza de café para almorzar">
                 </figure>
             </div>
         </section>
