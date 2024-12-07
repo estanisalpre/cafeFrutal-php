@@ -106,6 +106,10 @@ nav button a{
 nav button:hover, #logOutButton:hover{
     background-color: var(--LightFont);
 }
+/*Le damos aspecto a todas las imagenes para que carguen mejor*/
+.aspect{
+    aspect-ratio: 16/9;
+}
 /*Menu Hamburguesa*/
 .icon_hamburguesa{
     width: auto;

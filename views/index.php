@@ -64,9 +64,9 @@
         <section class="contenedor_principal">
             <figure class="contenedor_carrousel">
                 <ul>
-                    <li class="carrousel_01"><img class="img_01" src="/public/imgs/cafe_frutal/local_nocturno.jpeg" alt="Local de Café Frutal Nocturno"></li>
-                    <li class="carrousel_02"><img class="img_02" src="/public/imgs/cafe_frutal/taza_08.jpg" alt="Taza de Café exhibida y servida"></li>
-                    <li class="carrousel_03"><img class="img_03" src="/public/imgs/cafe_frutal/local_interior.jpeg" alt="Imagen del interior del local Café Frutal"></li>
+                    <li class="carrousel_01"><img class="img_01 aspect" src="/public/imgs/cafe_frutal/local_nocturno.jpeg" alt="Local de Café Frutal Nocturno"></li>
+                    <li class="carrousel_02"><img class="img_02 aspect" src="/public/imgs/cafe_frutal/taza_08.jpg" alt="Taza de Café exhibida y servida"></li>
+                    <li class="carrousel_03"><img class="img_03 aspect" src="/public/imgs/cafe_frutal/local_interior.jpeg" alt="Imagen del interior del local Café Frutal"></li>
                 </ul>
             </figure>
             <article class="contenedor_titulos">
@@ -219,18 +219,6 @@
                             <p>cafefrutal@gmail.com</p>
                         </div>
                     </div>
-                    <form action="https://formsubmit.co/estanisprevite@hotmail.com" method="POST" class="formulario">
-                        <input type="text" name="Nombre" id="name" placeholder="Nombre o Razón Social" required autocomplete="off">
-                        <input type="text" name="Apellido" id="surname" placeholder="Apellido" autocomplete="off">
-                        <input type="email" name="Correo" id="email" placeholder="Correo electrónico" required autocomplete="off">
-                        <input type="tel" name="Telefono" id="tel" placeholder="Número teléfono" required autocomplete="off">
-                        <input type="text" name="Motivo" id="motivo" placeholder="Motivo de contacto" required autocomplete="off">
-                        <div class="button">
-                            <button type="submit">Enviar</button>
-                        </div>
-                        <input type="hidden" name="_next" value="http://localhost:8000">
-                        <input type="hidden" name="_captcha" value="false">
-                    </form>
                     <figure class="redes_form">
                         <figure class="redes_01">
                             <a href="https://www.facebook.com/CafeFrutal"><img src="/public/imgs/icons/facebook.png" alt="Logo Facebook"></a>
@@ -259,38 +247,6 @@
                     echo "<p>$error</p>";
                 }
             ?>
-        </section>
-        <section id="panelContainer" class="panelContainer">
-            <div class="topContainer">
-                <h1 id="titlePanelControl">Panel Administrativo</h1>
-            </div>
-            <div class="tableContainer">
-                <form action="/update-stock" method="POST">
-                    <table class="productTable">
-                        <tr>
-                            <th>Nombre Producto</th>
-                            <th>Disponible</th>
-                            <th>Estado</th>
-                        </tr>
-                        <tr>
-                            <td>Café De Origen</td>
-                            <td><input type="checkbox" name="deOrigen" id="deOrigen" checked></td>
-                            <td><span id="deOrigenStatus" class="status agotado">Agotado</span></td>
-                        </tr>
-                        <tr>
-                            <td>Café Anayansi</td>
-                            <td><input type="checkbox" name="anayansi" id="anayansi"></td>
-                            <td><span id="anayansiStatus" class="status agotado">Agotado</span></td>
-                        </tr>
-                        <tr>
-                            <td>Café Luna Azul</td>
-                            <td><input type="checkbox" name="lunaAzul" id="lunaAzul"></td>
-                            <td><span id="lunaAzulStatus" class="status agotado">Agotado</span></td>
-                        </tr>
-                    </table>
-                    <button type="submit">Guardar</button>
-                </form>
-            </div>
         </section>
     </main>
     <!--FOOTER-->
